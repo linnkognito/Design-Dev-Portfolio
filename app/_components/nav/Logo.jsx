@@ -1,0 +1,22 @@
+import Link from 'next/link';
+
+function Logo() {
+  return (
+    <div className='hover:scale-110 anim-tran'>
+      <Link
+        href='/'
+        className='text-2xl font-semibold text-heading tracking-widest'
+        aria-label='Home'
+      >
+        <span
+          className='text-slate-300 tracking-widest uppercase'
+          aria-hidden='true'
+        >
+          {'<'} <span className='text-pri'>Linn</span> {'/>'}
+        </span>
+      </Link>
+    </div>
+  );
+}
+
+export default Logo;
