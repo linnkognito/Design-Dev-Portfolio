@@ -1,7 +1,5 @@
 import './globals.css';
 import { Orbitron, Jura } from 'next/font/google';
-import Image from 'next/image';
-import Header from './_components/ui/Header';
 
 const orbitron = Orbitron({
   subsets: ['latin'],
@@ -33,7 +31,7 @@ function RootLayout({ children }) {
       dir='ltr'
       className={`${jura.variable} ${orbitron.variable}`}
     >
-      <body className='relative aspect-auto w-full max-w-screen min-h-screen overflow-x-hidden'>
+      <body className='relative aspect-auto w-full max-w-screen min-h-screen scrollbar-gutter-stable overflow-x-hidden'>
         {children}
       </body>
     </html>

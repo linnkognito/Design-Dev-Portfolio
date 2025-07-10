@@ -1,0 +1,57 @@
+{
+  "id": "dev-portfolio",
+  "title": "About this portfolio",
+  "shortDescription": "My custom-built developer portfolio built with React and Next.js. Highlights personal projects, showcases accessibility and performance best practices, and serves as both a technical playground and professional introduction.",
+  "features": [
+    {
+      "id": "lighthouse",
+      "text": "Achieved 100/100 in Performance and SEO, and above 90 in Accessibility and Best Practices on Lighthouse audits, demonstrating strong attention to frontend performance, semantic markup, and modern web standards."
+    },
+    {
+      "id": "content-structure",
+      "text": "Built as a dynamic, component-based React app with reusable layouts and structured project data, making content updates easy and consistent."
+    },
+    {
+      "id": "a11y-seo",
+      "text": "For this project, I focused heavily on accessibility and SEO from the ground up — using semantic HTML, aria-labels, keyboard navigation, meta tags, and structured data."
+    },
+    {
+      "id": "design-and-branding",
+      "text": "Designed to reflect my personality and creative style while remaining highly readable and user-friendly across screen sizes."
+    },
+    {
+      "id": "meta",
+      "text": "Yes, I turned my portfolio into one of the portfolio projects. Meta, I know — but also the best way to show what I can build when I care about every detail."
+    }
+  ],
+  "path": "about/this-portfolio",
+  "technologies": [
+    { "title": "React.js", "icon": "reactjs" },
+    { "title": "Next.js", "icon": "nextjs" },
+    { "title": "Tailwind CSS", "icon": "tailwind" }
+  ],
+  "mainImage": {
+    "src": "/dev-portfolio-1.png",
+    "alt": "Print screen of this portfolios hero section"
+  },
+  "aboutImage": {
+    "src": "/dev-portfolio-lighthouse.png",
+    "alt": "Portfolio Lighthouse score: 100 Performance, 91 Accessibility, 96 Best Practices, 100 SEO"
+  },
+  "images": [
+    {
+      "src": "/dev-portfolio-2.png",
+      "alt": "Projects page"
+    },
+    {
+      "src": "/dev-portfolio-performance.png",
+      "alt": "Lighthouse performance score: 100/100"
+    }
+  ],
+  "links": {
+    "live": "https://linnkognito.com/",
+    "github": "https://github.com/linnkognito/Portfolio-Linn-Johansen"
+  },
+  "isCourseWork": false,
+  "isUnderConstruction": false
+}

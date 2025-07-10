@@ -1,4 +1,4 @@
-import DividerHorizontal from '../dividers/DividerHorizontal';
+import DividerHorizontal from '../ui/DividerHorizontal';
 
 function Heading({
   children,
@@ -11,20 +11,13 @@ function Heading({
   ...props
 }) {
   const baseStyles = {
-    h1: 'w-full sm:max-w-4/5 mx-auto text-center tracking-[16px] sm:tracking-[24px] tshadow-glow',
-    h2: 'text-center tracking-[0.75em] font-semibold',
-    h3: '',
-  };
-
-  const fontSize = {
-    h1: 'text-xl sm:text-2xl md:text-[40px]',
-    h2: 'text-lg sm:text-xl md:text-2xl',
-    h3: 'text-base sm:text-lg md:text-xl',
+    h1: 'text-[24px] md:text-[40px] xl:text-[52px] font-medium tracking-[10px] leading-none',
+    h2: 'text-[28px] md:text-[32px] font-semibold tracking-[20px] leading-none',
+    h3: 'text-[18px] md:text-[24px] font-semibold tracking-[10px] leading-none',
   };
 
   const colorStyles = {
     pri: 'text-pri',
-    acc: 'text-acc',
     pop: 'text-pop',
     txt: 'text-txt',
   };
@@ -39,7 +32,6 @@ function Heading({
         font-semibold 
         uppercase 
         ${baseStyles[Tag]} 
-        ${fontSize[Tag]}
         ${colorStyles[color]} 
         ${className} 
         ${srOnly ? 'sr-only' : ''}`}

@@ -1,5 +1,5 @@
 import { BsLinkedin, BsGithub } from 'react-icons/bs';
-import NavWrapper from '@/_components/nav/NavWrapper';
+import NavWrapper from '@/_components/layout/NavWrapper';
 import Link from 'next/link';
 
 function Header({ ...props }) {

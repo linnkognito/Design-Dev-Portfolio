@@ -1,4 +1,4 @@
-import DividerHorizontal from '@/_components/dividers/DividerHorizontal';
+import DividerHorizontal from '@/_components/ui/DividerHorizontal';
 import Heading from './Heading';
 
 function PageHeading({ children, id = '', border = true, ...props }) {

@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion';
 import PageWrapper from '@/_components/containers/PageWrapper';
-import DividerHorizontal from '@/_components/dividers/DividerHorizontal';
+import DividerHorizontal from '@/_components/ui/DividerHorizontal';
 import Heading from '@/_components/text/Heading';
 import BackButton from '@/_components/buttons/BackButton';
 
