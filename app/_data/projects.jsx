@@ -13,10 +13,10 @@ function MorningstarDecoration() {
 
 function MoodTrackingDecoration() {
   const base =
-    'w-1/5 h-full opacity-70 group-hover:opacity-100 group-hover:scale-105 transition-[scale,opacity] duration-400 ease-in-out will-change-[scale,opacity]';
+    'lg:w-1/5 h-full opacity-70 group-hover:opacity-100 group-hover:scale-105 transition-[scale,opacity] duration-400 ease-in-out will-change-[scale,opacity]';
 
   return (
-    <div className='group flex flex-col lg:flex-row gap-4 w-full h-full cursor-crosshair'>
+    <div className='group flex flex-col lg:flex-row gap-2 lg:gap-4 w-full h-full cursor-crosshair'>
       <div className={`${base} bg-mt-red group-hover:delay-0`} />
       <div className={`${base} bg-mt-amber group-hover:delay-50`} />
       <div className={`${base} bg-mt-green group-hover:delay-100`} />
@@ -30,7 +30,7 @@ export const projects = [
   {
     id: 'morningstar',
     title: 'Morningstar',
-    path: 'portfolio/morningstar',
+    path: '/projects/morningstar',
     image: {
       src: '/morningstar-mockup.png',
       alt: 'Morningstar',
@@ -80,7 +80,7 @@ export const projects = [
   {
     id: 'mood-tracking',
     title: 'Mood Tracking',
-    path: 'portfolio/collabs/mood-tracking',
+    path: '/projects/mood-tracking',
     decoration: <MoodTrackingDecoration />,
     description:
       'This is the frontend of the collaborative Mood Tracking project, a full-stack web app that lets users track their mood, feelings, and sleep habits. It presents the data in a clean, easy-to-understand dashboard.',

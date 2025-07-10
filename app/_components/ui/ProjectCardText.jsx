@@ -4,7 +4,7 @@ import Link from 'next/link';
 function ProjectCardText({ title, path, description }) {
   return (
     <>
-      <Link href={`/portfolio/${path}`}>
+      <Link href={`${path}`}>
         <Heading tag='h2' className='mb-6'>
           {title}
         </Heading>

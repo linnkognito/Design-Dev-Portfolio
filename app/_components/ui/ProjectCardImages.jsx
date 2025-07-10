@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 function ProjectCardImages({ image, decoration }) {
   return (
-    <section className='flex lg:flex-col gap-6 w-full lg:min-w-[350px] lg:max-w-[476px] h-fit aspect-16/9 max-lg:mb-9'>
+    <section className='flex lg:flex-col gap-4 md:gap-6 w-full max-w-full lg:min-w-[350px] lg:max-w-[476px] h-fit aspect-16/9 max-lg:mb-9'>
       <div
         className='
       order-1 lg:order-2 relative

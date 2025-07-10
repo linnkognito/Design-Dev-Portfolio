@@ -44,14 +44,15 @@ function ProjectCard({ projectOptions }: ProjectCardProps) {
     <section
       className='
     flex max-lg:flex-col lg:gap-10
-    md:w-8/10 lg:max-w-[1174px]
+    w-full lg:max-w-[1174px]
     h-fit
+    lg:pl-10
     '
     >
       <ProjectCardImages image={image} decoration={decoration} />
 
       <section className='flex flex-col h-fit px-5 my-auto'>
-        <ProjectCardLinks links={links} />
+        <ProjectCardLinks variant='card' links={links} />
         <ProjectCardText title={title} path={path} description={description} />
         <ProjectCardButton buttonLabel={buttonLabel} path={path} />
       </section>
