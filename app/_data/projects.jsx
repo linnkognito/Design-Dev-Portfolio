@@ -38,6 +38,33 @@ export const projects = [
     decoration: <MorningstarDecoration />,
     description:
       'Responsive React frontend with API integration for live product data. Colorful layout, dynamic filtering, and real-world-ready design.',
+    about: {
+      title: 'About',
+      text: 'Morningstar is a responsive React frontend with API integration for live product data. Colorful layout, dynamic filtering, and real-world-ready design.',
+      images: [
+        {
+          src: '/morningstar-1.png',
+          alt: 'Products page',
+        },
+        {
+          src: '/HER_pattern.jpg',
+          alt: 'Products page details - menus and hover effects',
+        },
+      ],
+    },
+    uiUx: {
+      title: 'UI/UX',
+      text: 'Built with utility-first Tailwind(opens in a new tab) classes for quick styling and consistency. The layout is fully responsive and scales smoothly from mobile to widescreen. I also focused on creating seamless interaction design — making sure users can access key content and actions within one or two clicks, wherever they are, for an experience that feels natural and effortless.',
+      visuals: { src: '/morningstar-mockup.png', alt: 'Insp Image' },
+      colorPalette: [
+        { id: 'zest', color: 'bg-zest' },
+        { id: 'ember', color: 'bg-ember' },
+        { id: 'aura', color: 'bg-aura' },
+        { id: 'mint', color: 'bg-mint' },
+        { id: 'pearl', color: 'bg-pearl' },
+        { id: 'sea', color: 'bg-sea' },
+      ],
+    },
     technologies: [
       { title: 'React.js', icon: 'reactjs' },
       { title: 'Node.js', icon: 'nodejs' },

@@ -2,6 +2,9 @@
 
 @layer base {
   @theme {
+    --breakpoint-xs: 24rem;
+    --breakpoint-xs-plus: 25.75rem;
+
     --color-bgr: #070707;
     --color-txt: #f8fafc;
     --color-pri: #a5b4fc;
@@ -11,18 +14,18 @@
     --color-pop: #d9f99d;
 
     /* Morningstar Demo */
+    --color-pearl: #f4f4f2;
     --color-zest: #dceb59;
+    --color-ember: #f05a31;
     --color-aura: #d19bf3;
     --color-mint: #b7fcbf;
+    --color-sea: #c7dddc;
 
     --color-mt-red: #ff9899;
     --color-mt-amber: #ffc97c;
     --color-mt-green: #89e780;
     --color-mt-blue: #89caff;
     --color-mt-indigo: #b881ff;
-
-    --breakpoint-hero-md: 980px;
-    --breakpoint-hero-sm: 820px;
   }
   html {
     color: var(--color-txt);
@@ -43,13 +46,13 @@
 
 @layer components {
   .text-preset-p1 {
-    @apply text-[18px] md:text-[20px] text-justify font-semibold tracking-[1%] leading-[32px] hyphens-auto;
+    @apply text-[18px] md:text-[20px] text-justify font-medium tracking-[1%] leading-[32px] hyphens-auto;
   }
   .text-preset-p2 {
-    @apply text-base md:text-[18px] text-justify font-semibold tracking-[1%] leading-[32px] hyphens-auto;
+    @apply text-base md:text-[18px] text-justify font-medium tracking-[1%] leading-[32px] hyphens-auto;
   }
   .text-preset-p3 {
-    @apply text-base md:text-[20px] font-semibold tracking-[-0.5%] leading-[28px] md:leading-[40px] hyphens-auto;
+    @apply text-base md:text-[20px] font-medium tracking-[-0.5%] leading-[28px] md:leading-[40px] hyphens-auto;
   }
 
   .flex-center {

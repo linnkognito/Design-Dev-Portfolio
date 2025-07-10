@@ -1,7 +1,7 @@
 function ProjectCardLinks({ variant, links }) {
   const wrapperStyles = {
-    card: 'mb-8',
-    page: 'h-full items-center justify-center',
+    card: 'mb-8 gap-5',
+    page: 'max-xs:order-1 h-full items-center justify-center gap-3 md:gap-5',
   };
   const iconStyles = {
     card: 'w-8 h-8',
@@ -11,7 +11,7 @@ function ProjectCardLinks({ variant, links }) {
   return (
     <div
       className={`
-        flex gap-5 
+        flex 
         ${wrapperStyles[variant]}`}
     >
       {links.map((link) => (
@@ -24,7 +24,6 @@ function ProjectCardLinks({ variant, links }) {
           rel='noopener noreferrer'
           className={`group flex items-center justify-center rounded-lg transition-colors 
           duration-300
-          gap-5
           ${iconStyles[variant]}
           ${link.colors}`}
         >

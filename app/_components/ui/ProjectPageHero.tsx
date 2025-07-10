@@ -33,13 +33,16 @@ function ProjectPageHero({
   technologies,
 }: ProjectPageHeroProps) {
   return (
-    <section>
+    <section className='w-full'>
       {/* Header --> H1, xs:Line, Icons */}
-      <header className='flex items-center justify-between h-fit pb-10'>
-        <Heading tag='h1' className='pl-2 pr-4 pt-4 pb-3'>
+      <header className='flex max-xs:flex-col items-center xs:justify-between w-full h-fit pb-10'>
+        <Heading
+          tag='h1'
+          className='max-xs:order-2 w-fit xs:max-w-8/10 pl-2 pt-4 pb-3'
+        >
           {title}
         </Heading>
-        <div className='self-stretch w-[1px] bg-txt/50' />
+        <div className='max-xs:hidden xs-plus:hidden self-stretch w-[1px] bg-txt/50' />
         <ProjectCardLinks variant='page' links={links} />
       </header>
 

@@ -11,7 +11,7 @@ function Heading({
   ...props
 }) {
   const baseStyles = {
-    h1: 'text-[24px] md:text-[40px] xl:text-[52px] font-medium tracking-[10px] leading-none',
+    h1: 'text-lg sm:text-[24px] md:text-[40px] xl:text-[52px] font-medium tracking-[10px] leading-none max-xs:text-center',
     h2: 'text-[24px] md:text-[32px] font-semibold tracking-[20px] leading-none',
     h3: 'text-[18px] md:text-[24px] font-semibold tracking-[10px] leading-none',
   };
