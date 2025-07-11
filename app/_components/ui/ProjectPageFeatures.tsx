@@ -6,6 +6,7 @@ import Heading from '../text/Heading';
 // import Image from 'next/image';
 import SlideshowBar from './SlideshowBar';
 import ButtonPrevNextChevron from '../buttons/ButtonPrevNextChevron';
+import LazyLoadContainer from '../motion/LazyLoadContainer';
 
 function ProjectPageFeatures({ features }: { features: Feature[] }) {
   const [activeSlide, setActiveSlide] = useState(0);
@@ -13,7 +14,10 @@ function ProjectPageFeatures({ features }: { features: Feature[] }) {
   const numFeatures = features.length;
 
   return (
-    <section className='flex flex-col items-center justify-center lg:gap-20 w-full md:px-10 lg:px-0'>
+    <LazyLoadContainer
+      tag='section'
+      className='flex flex-col items-center justify-center lg:gap-20 w-full md:px-10 lg:px-0'
+    >
       <div
         className='
           flex flex-col items-center justify-center
@@ -62,7 +66,7 @@ function ProjectPageFeatures({ features }: { features: Feature[] }) {
       </div>
 
       <SlideshowBar quantity={numFeatures} activeSlide={activeSlide} />
-    </section>
+    </LazyLoadContainer>
   );
 }
 

@@ -6,6 +6,8 @@ export type Image = {
   alt: string;
 };
 
+export type Images = Image[];
+
 export type Technology = {
   title: string;
   icon: keyof typeof techIcons;
@@ -34,6 +36,6 @@ export type Feature = {
 export type UiUx = {
   title: string;
   text: string;
-  visuals: Image | ReactElement;
+  visuals: ReactElement;
   colorPalette: ColorPalette;
 };

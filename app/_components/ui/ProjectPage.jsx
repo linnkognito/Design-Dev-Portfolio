@@ -4,7 +4,7 @@ import ProjectPageHero from './ProjectPageHero';
 import ProjectPageUiUx from './ProjectPageUiUx';
 
 function ProjectPage({ project }) {
-  const { title, links, image, technologies, about, uiUx, features } = project;
+  const { title, links, images, technologies, about, uiUx, features } = project;
 
   return (
     <main
@@ -13,7 +13,7 @@ function ProjectPage({ project }) {
       px-4 pt-8 pb-24
       sm:px-8 
       md:px-9 md:pt-12 
-      lg:px-14
+      lg:px-20
       xl:px-24 xl:pt-16
     '
     >
@@ -21,7 +21,7 @@ function ProjectPage({ project }) {
         <ProjectPageHero
           title={title}
           links={links}
-          image={image}
+          images={images}
           technologies={technologies}
         />
         <ProjectPageAbout about={about} />

@@ -11,7 +11,6 @@ function MorningstarDecoration() {
     />
   );
 }
-
 function MoodTrackingDecoration() {
   const base =
     'lg:w-1/5 h-full opacity-70 group-hover:opacity-100 group-hover:scale-105 transition-[scale,opacity] duration-400 ease-in-out will-change-[scale,opacity]';
@@ -23,6 +22,18 @@ function MoodTrackingDecoration() {
       <div className={`${base} bg-mt-green group-hover:delay-100`} />
       <div className={`${base} bg-mt-blue group-hover:delay-150`} />
       <div className={`${base} bg-mt-indigo group-hover:delay-200`} />
+    </div>
+  );
+}
+function MorningstarVisuals() {
+  return (
+    <div role='img' className='relative aspect-4/3 rounded-2xl overflow-hidden'>
+      <Image
+        src='/morningstar-mockup.png'
+        alt='Morningstar'
+        fill
+        className='object-cover object-center'
+      />
     </div>
   );
 }
@@ -41,7 +52,7 @@ export const projects = [
       'Responsive React frontend with API integration for live product data. Colorful layout, dynamic filtering, and real-world-ready design.',
     about: {
       title: 'About',
-      text: 'Morningstar is a responsive React frontend with API integration for live product data. Colorful layout, dynamic filtering, and real-world-ready design.',
+      text: 'Morningstar is a fully responsive e-commerce web app built to sharpen my skills in UI design and fullstack development. The app showcases a fake online clothing store, and pulls product data from a custom-built Express + MongoDB API. My goal was to simulate something akin to a real-world dev environment: from building an API and handling dynamic product filtering, to crafting a layout that is both expressive and responsive.',
       images: [
         {
           src: '/morningstar-1.png',
@@ -56,7 +67,7 @@ export const projects = [
     uiUx: {
       title: 'UI/UX',
       text: 'Built with utility-first Tailwind classes for quick styling and consistency. The layout is fully responsive and scales smoothly from mobile to widescreen. I also focused on creating seamless interaction design — making sure users can access key content and actions within one or two clicks, wherever they are, for an experience that feels natural and effortless.',
-      visuals: { src: '/morningstar-mockup.png', alt: 'Insp Image' },
+      visuals: <MorningstarVisuals />,
       colorPalette: [
         { id: 'zest', color: 'bg-zest' },
         { id: 'ember', color: 'bg-ember' },
@@ -89,6 +100,7 @@ export const projects = [
       },
     ],
     images: [
+      { src: '/morningstar-mockup.png', alt: 'Products page' },
       { src: '/morningstar-1.png', alt: 'Products page' },
       {
         src: '/morningstar-2.png',
