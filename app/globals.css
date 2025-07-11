@@ -52,7 +52,7 @@
     @apply text-base md:text-[18px] text-justify font-medium tracking-[1%] leading-[32px] hyphens-auto;
   }
   .text-preset-p3 {
-    @apply text-base md:text-[20px] text-justify font-medium tracking-[-0.5%] leading-[28px] md:leading-[40px] hyphens-auto;
+    @apply text-base md:text-[18px] text-justify font-medium tracking-[-0.5%] leading-[28px] md:leading-[40px] hyphens-auto;
   }
 
   .flex-center {

@@ -9,14 +9,15 @@ function ProjectPage({ project }) {
   return (
     <main
       className='
-      flex flex-col items-center w-full 
+      flex flex-col items-center w-full max-w-[1440px] mx-auto
       px-4 pt-8 pb-24
-      sm:px-5 
+      sm:px-8 
       md:px-9 md:pt-12 
+      lg:px-14
       xl:px-24 xl:pt-16
     '
     >
-      <article className='flex flex-col items-center gap-50 w-full px-md:px-9 xl:px-24'>
+      <article className='flex flex-col items-center gap-50 w-full'>
         <ProjectPageHero
           title={title}
           links={links}
