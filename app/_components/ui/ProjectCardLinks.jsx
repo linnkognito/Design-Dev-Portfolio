@@ -1,7 +1,7 @@
 function ProjectCardLinks({ variant, links }) {
   const wrapperStyles = {
     card: 'mb-8 gap-5',
-    page: 'max-xs:order-1 h-full items-center justify-center gap-3 md:gap-5',
+    page: 'max-xs-plus:order-1 h-full items-center justify-center gap-4 md:gap-5 max-xs-plus:mb-3',
   };
   const iconStyles = {
     card: 'w-8 h-8',

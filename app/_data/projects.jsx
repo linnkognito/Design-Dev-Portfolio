@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import { FaGithub, FaGlobe } from 'react-icons/fa';
+import { TbRouteAltRight } from 'react-icons/tb';
 
 function MorningstarDecoration() {
   return (
@@ -54,7 +55,7 @@ export const projects = [
     },
     uiUx: {
       title: 'UI/UX',
-      text: 'Built with utility-first Tailwind(opens in a new tab) classes for quick styling and consistency. The layout is fully responsive and scales smoothly from mobile to widescreen. I also focused on creating seamless interaction design — making sure users can access key content and actions within one or two clicks, wherever they are, for an experience that feels natural and effortless.',
+      text: 'Built with utility-first Tailwind classes for quick styling and consistency. The layout is fully responsive and scales smoothly from mobile to widescreen. I also focused on creating seamless interaction design — making sure users can access key content and actions within one or two clicks, wherever they are, for an experience that feels natural and effortless.',
       visuals: { src: '/morningstar-mockup.png', alt: 'Insp Image' },
       colorPalette: [
         { id: 'zest', color: 'bg-zest' },
@@ -100,6 +101,37 @@ export const projects = [
       {
         src: '/morningstar-4.png',
         alt: 'Product page',
+      },
+    ],
+    features: [
+      {
+        id: 'dynamic-routing',
+        title: 'Dynamic Routing',
+        description:
+          'Built with React Router, the app uses nested routes and dynamic URL parameters to handle product categories and item detail pages. This prevents full page reloads, in order to create a seamless user experience.',
+        image: (
+          <TbRouteAltRight className='w-[200px] h-[200px] stroke-pop stroke-1' />
+        ),
+      },
+      {
+        id: 'state-management',
+        title: 'State Management',
+        description:
+          'I knew I wanted to keep product and cart logic centralized with global state. I used Redux Toolkit to manage global state for the products, cart, filters and UI controls. Async logic (like API fetching) is handled with thunks.',
+        image: {
+          src: '/morningstar-2.png',
+          alt: 'Products page details - menus and hover effects',
+        },
+      },
+      {
+        id: 'custom-api',
+        title: 'Custom API',
+        description:
+          'Powered by Express and MongoDB, I built a custom REST API to serve product data. The API supports filtering, querying by category or type, and is designed to mirror the structure of a real-world backend.',
+        image: {
+          src: '/morningstar-3.png',
+          alt: 'Home page for small screens and dropdown menu',
+        },
       },
     ],
     buttonLabel: 'Details',

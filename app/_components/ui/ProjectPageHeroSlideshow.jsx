@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 function ProjectPageHeroSlideshow({ image }) {
   return (
-    <div className='md:hidden relative aspect-16/9 rounded-2xl overflow-hidden'>
+    <div className='md:hidden relative aspect-16/9 w-full rounded-2xl overflow-hidden'>
       <Image
         src={image.src}
         alt={image.alt}

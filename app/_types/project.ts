@@ -1,4 +1,5 @@
 import techIcons from '@/_data/techIcons';
+import { ReactElement } from 'react';
 
 export type Image = {
   src: string;
@@ -23,9 +24,16 @@ export type Color = {
 
 export type ColorPalette = Color[];
 
+export type Feature = {
+  id: string;
+  title: string;
+  description: string | ReactElement;
+  image: Image | ReactElement;
+};
+
 export type UiUx = {
   title: string;
   text: string;
-  visuals: Image;
+  visuals: Image | ReactElement;
   colorPalette: ColorPalette;
 };
