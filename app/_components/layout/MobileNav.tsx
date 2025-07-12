@@ -4,7 +4,7 @@ import { useRef, useState } from 'react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import { Link } from '@/_types/nav';
 import NavLink from './NavLink';
-import useDismiss from '@/hooks/useDismiss';
+import useDismiss from '@/_hooks/useDismiss';
 
 type MobileNavProps = {
   pathname: string;
@@ -20,7 +20,7 @@ function MobileNav({ pathname, links }: MobileNavProps) {
   useDismiss(dropdownRef, isOpen, setIsOpen);
 
   return (
-    <div ref={dropdownRef} className='relative md:hidden'>
+    <div ref={dropdownRef} className='md:hidden relative flex items-center'>
       <button
         className='hover:text-pri cursor-pointer hover:scale-110 will-change-transform duration-300 ease-in-out'
         onClick={toggleMenu}
@@ -34,7 +34,7 @@ function MobileNav({ pathname, links }: MobileNavProps) {
 
       {isOpen && (
         <div
-          className='absolute top-full right-0 w-50 mt-2 p-div bg-bgr border border-pri/50 rounded-xs shadow-xl shadow-pri z-100'
+          className='absolute top-12 -left-4 w-50 mt-2 p-div bg-bgr border border-t-txt/50 border-x-txt/50 rounded-b-lg shadow-xl shadow-bgr z-100'
           role='menu'
         >
           <ul className='flex flex-col gap-4'>
@@ -44,6 +44,7 @@ function MobileNav({ pathname, links }: MobileNavProps) {
                 href={link.href}
                 pathname={pathname}
                 onClick={toggleMenu}
+                className='hover:pl-2 transition-[padding-left] duration-400 ease-in-out'
               >
                 {link.label}
               </NavLink>

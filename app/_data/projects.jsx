@@ -1,16 +1,13 @@
-import Image from 'next/image';
 import { FaGithub, FaGlobe } from 'react-icons/fa';
 import { TbRouteAltRight } from 'react-icons/tb';
+import {
+  MorningstarAbout100,
+  MorningstarAboutDetails,
+  MorningstarDecoration,
+  MorningstarAboutText,
+  MorningstarVisuals,
+} from '../_components/projects/Morningstar';
 
-function MorningstarDecoration() {
-  return (
-    <Image
-      src='/HER_pattern.jpg'
-      fill
-      className='w-full h-full object-cover object-center lg:object-[50%_32%] hover:scale-105 will-change-transform transition-transform ease-in-out duration-500 cursor-crosshair'
-    />
-  );
-}
 function MoodTrackingDecoration() {
   const base =
     'lg:w-1/5 h-full opacity-70 group-hover:opacity-100 group-hover:scale-105 transition-[scale,opacity] duration-400 ease-in-out will-change-[scale,opacity]';
@@ -25,18 +22,6 @@ function MoodTrackingDecoration() {
     </div>
   );
 }
-function MorningstarVisuals() {
-  return (
-    <div role='img' className='relative aspect-4/3 rounded-2xl overflow-hidden'>
-      <Image
-        src='/morningstar-mockup.png'
-        alt='Morningstar'
-        fill
-        className='object-cover object-center'
-      />
-    </div>
-  );
-}
 
 export const projects = [
   {
@@ -47,22 +32,18 @@ export const projects = [
       src: '/morningstar-mockup.png',
       alt: 'Morningstar',
     },
-    decoration: <MorningstarDecoration />,
+    decoration: {
+      visual: <MorningstarDecoration />,
+      ariaLabel:
+        'Woman in bold streetwear representing the Morningstar fashion brand',
+      hideFromScreenReaders: false,
+    },
     description:
-      'Responsive React frontend with API integration for live product data. Colorful layout, dynamic filtering, and real-world-ready design.',
+      'Responsive Next.js frontend for a fashion e-commerce app. Features include dynamic filtering, custom API integration and a vibrant UI built with Tailwind. Designed for real-world readiness and smooth performance across devices.',
     about: {
       title: 'About',
-      text: 'Morningstar is a fully responsive e-commerce web app built to sharpen my skills in UI design and fullstack development. The app showcases a fake online clothing store, and pulls product data from a custom-built Express + MongoDB API. My goal was to simulate something akin to a real-world dev environment: from building an API and handling dynamic product filtering, to crafting a layout that is both expressive and responsive.',
-      images: [
-        {
-          src: '/morningstar-1.png',
-          alt: 'Products page',
-        },
-        {
-          src: '/HER_pattern.jpg',
-          alt: 'Products page details - menus and hover effects',
-        },
-      ],
+      text: <MorningstarAboutText />,
+      visuals: [<MorningstarAbout100 />, <MorningstarAboutDetails />],
     },
     uiUx: {
       title: 'UI/UX',
@@ -100,19 +81,25 @@ export const projects = [
       },
     ],
     images: [
-      { src: '/morningstar-mockup.png', alt: 'Products page' },
-      { src: '/morningstar-1.png', alt: 'Products page' },
       {
-        src: '/morningstar-2.png',
-        alt: 'Products page details - menus and hover effects',
+        src: '/morningstar-mockup.png',
+        alt: 'Mockup of desktop view for Morningstar, showcasing the home page, products pages, and the page for a single product.',
       },
       {
-        src: '/morningstar-3.png',
-        alt: 'Home page for small screens and dropdown menu',
+        src: '/morningstar-mobile.png',
+        alt: `Mockup of mobile view for Morningstar's home page, including the main navigation dropdown menu and its hover effects.`,
+      },
+      {
+        src: '/morningstar-1.png',
+        alt: "Screenshot of the Women's products section of Morningstar. The page is light with pastel colored accents and gradients.",
       },
       {
         src: '/morningstar-4.png',
-        alt: 'Product page',
+        alt: 'Screenshot of the single product page for Morningstar, the layout featured a large modeled product image to the left, and description and color, size and quantity selection to the right.',
+      },
+      {
+        src: '/morningstar-2.png',
+        alt: 'Different types of menus of the products page, including the dropdown menu for sorting options, and the product card menu for quick selection and adding to cart.',
       },
     ],
     features: [
@@ -152,7 +139,11 @@ export const projects = [
     id: 'mood-tracking',
     title: 'Mood Tracking',
     path: '/projects/mood-tracking',
-    decoration: <MoodTrackingDecoration />,
+    decoration: {
+      visual: <MoodTrackingDecoration />,
+      ariaLabel: 'Color palette of Mood Tracking project',
+      hideFromScreenReaders: false,
+    },
     description:
       'This is the frontend of the collaborative Mood Tracking project, a full-stack web app that lets users track their mood, feelings, and sleep habits. It presents the data in a clean, easy-to-understand dashboard.',
     technologies: [

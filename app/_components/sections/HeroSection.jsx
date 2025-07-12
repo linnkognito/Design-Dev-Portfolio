@@ -13,7 +13,7 @@ function HeroSection() {
       >
         <div className='flex flex-col gap-6 w-fit mx-auto sm:pt-[15vh] pb-10'>
           <H1 />
-          <p className='max-sm:text-center pl-1 text-xl sm:text-2xl font-medium tracking-wider'>
+          <p className='pl-1 text-xl sm:text-2xl font-medium tracking-wider'>
             Making performant look pretty.
           </p>
         </div>

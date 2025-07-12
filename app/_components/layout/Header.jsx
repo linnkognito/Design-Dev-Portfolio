@@ -5,7 +5,7 @@ import Link from 'next/link';
 function Header({ ...props }) {
   return (
     <header
-      className='flex items-center justify-between w-full max-w-header mx-auto px-10 py-6 sm:pt-12 sm:pb-6 border-b border-txt/30'
+      className='flex items-center justify-between w-full max-w-header mx-auto pl-4 pr-6 md:px-10 py-6 sm:pt-12 sm:pb-6 border-b border-txt/30'
       {...props}
     >
       <NavWrapper />

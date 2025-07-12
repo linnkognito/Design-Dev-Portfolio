@@ -1,4 +1,4 @@
-import DividerHorizontal from './DividerHorizontal';
+import LazyLoadContainer from '../motion/LazyLoadContainer';
 import ProjectCardButton from './ProjectCardButton';
 import ProjectCardImages from './ProjectCardImages';
 import ProjectCardLinks from './ProjectCardLinks';
@@ -41,7 +41,8 @@ function ProjectCard({ projectOptions }: ProjectCardProps) {
     projectOptions;
 
   return (
-    <section
+    <LazyLoadContainer
+      tag='article'
       className='
     flex max-lg:flex-col lg:gap-10
     w-full lg:max-w-[1174px]
@@ -53,10 +54,16 @@ function ProjectCard({ projectOptions }: ProjectCardProps) {
 
       <section className='flex flex-col h-fit px-5 my-auto'>
         <ProjectCardLinks variant='card' links={links} />
-        <ProjectCardText title={title} path={path} description={description} />
-        <ProjectCardButton buttonLabel={buttonLabel} path={path} />
+        <div className='w-full lg:max-w-[594px] pr-10'>
+          <ProjectCardText
+            title={title}
+            path={path}
+            description={description}
+          />
+          <ProjectCardButton buttonLabel={buttonLabel} path={path} />
+        </div>
       </section>
-    </section>
+    </LazyLoadContainer>
   );
 }
 

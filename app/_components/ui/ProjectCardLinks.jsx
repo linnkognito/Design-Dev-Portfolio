@@ -9,7 +9,10 @@ function ProjectCardLinks({ variant, links }) {
   };
 
   return (
-    <div
+    <button
+      type='button'
+      title='Open link'
+      aria-label='Open link'
       className={`
         flex 
         ${wrapperStyles[variant]}`}
@@ -32,7 +35,7 @@ function ProjectCardLinks({ variant, links }) {
           </button>
         </a>
       ))}
-    </div>
+    </button>
   );
 }
 

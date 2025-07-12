@@ -12,8 +12,8 @@ function ProjectPageHeroGallery({ images }: { images: Images }) {
     hidden: {},
     show: {
       transition: {
-        delayChildren: 0.4,
-        staggerChildren: 0.3,
+        delayChildren: 0.2,
+        staggerChildren: 0.2,
       },
     },
   };
@@ -23,7 +23,7 @@ function ProjectPageHeroGallery({ images }: { images: Images }) {
     show: {
       opacity: 1,
       scale: 1,
-      transition: { duration: 0.8, ease: 'easeOut' },
+      transition: { duration: 0.3, ease: 'easeOut' },
     },
   };
   const imageVariant = {
@@ -31,7 +31,7 @@ function ProjectPageHeroGallery({ images }: { images: Images }) {
     show: {
       opacity: 1,
       scale: 1,
-      transition: { duration: 0.3, ease: 'easeOut' },
+      transition: { duration: 0.2, ease: 'easeOut' },
     },
   };
 
@@ -48,7 +48,7 @@ function ProjectPageHeroGallery({ images }: { images: Images }) {
         initial='hidden'
         whileInView='show'
         viewport={{ once: true }}
-        className='relative aspect-4/3 
+        className='group relative aspect-4/3 
         w-full lg:max-w-6/10
         rounded-2xl overflow-hidden'
       >
@@ -57,7 +57,7 @@ function ProjectPageHeroGallery({ images }: { images: Images }) {
           alt={images[featuredImage].alt}
           fill
           priority
-          className='object-center'
+          className='object-center group-hover:brightness-110 group-hover:scale-105 transition-all duration-500 ease-in-out will-change-[scale,brightness]'
         />
       </motion.div>
 
@@ -76,14 +76,14 @@ function ProjectPageHeroGallery({ images }: { images: Images }) {
                 variants={imageVariant}
                 key={image.src.split('.')[0]}
                 onClick={() => setFeaturedImage(index)}
-                className='relative aspect-4/3 rounded-2xl overflow-hidden cursor-zoom-in'
+                className='group relative aspect-4/3 rounded-2xl overflow-hidden cursor-zoom-in'
               >
                 <Image
                   src={image.src}
                   alt={image.alt}
                   fill
                   priority
-                  className='object-center'
+                  className='object-center group-hover:brightness-110 group-hover:scale-105 transition-all duration-500 ease-in-out will-change-[scale,brightness]'
                 />
               </motion.div>
             )

@@ -15,8 +15,8 @@ export type Technology = {
 
 export type About = {
   title: string;
-  text: string;
-  images: Image[];
+  text: string | ReactElement;
+  visuals: ReactElement[];
 };
 
 export type Color = {
@@ -30,7 +30,7 @@ export type Feature = {
   id: string;
   title: string;
   description: string | ReactElement;
-  image: Image | ReactElement;
+  image: ReactElement;
 };
 
 export type UiUx = {
@@ -38,4 +38,34 @@ export type UiUx = {
   text: string;
   visuals: ReactElement;
   colorPalette: ColorPalette;
+};
+
+export type Link = {
+  href: string;
+  alt: string;
+  title: string;
+  icon: ReactElement;
+  colors: string;
+};
+
+export type Decoration = {
+  visual: ReactElement;
+  ariaLabel?: string;
+  hideFromScreenReaders?: boolean;
+};
+
+export type Project = {
+  id: string;
+  title: string;
+  path: string;
+  image: Image;
+  decoration: Decoration;
+  description: string | ReactElement;
+  about: About;
+  uiUx: UiUx;
+  technologies: Technology[];
+  links: Link[];
+  images: Image[];
+  features: Feature[];
+  buttonLabel: string;
 };

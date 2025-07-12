@@ -10,7 +10,7 @@ function ProjectCardText({ title, path, description }) {
         </Heading>
       </Link>
 
-      <p className='max-lg:text-justify md:text-lg pr-4 mb-8'>{description}</p>
+      <p className='text-preset-p pr-4 mb-8'>{description}</p>
     </>
   );
 }
