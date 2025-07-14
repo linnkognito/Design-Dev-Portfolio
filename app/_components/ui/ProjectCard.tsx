@@ -44,17 +44,16 @@ function ProjectCard({ projectOptions }: ProjectCardProps) {
     <LazyLoadContainer
       tag='article'
       className='
-    flex max-lg:flex-col lg:gap-10
+    flex max-lg:flex-col lg:items-center lg:justify-center lg:gap-10
     w-full lg:max-w-[1174px]
-    h-fit
-    lg:pl-10
+    h-fit lg:pl-10
     '
     >
       <ProjectCardImages image={image} decoration={decoration} />
 
       <section className='flex flex-col h-fit px-5 my-auto'>
         <ProjectCardLinks variant='card' links={links} />
-        <div className='w-full lg:max-w-[594px] pr-10'>
+        <div className='w-full lg:max-w-[594px]'>
           <ProjectCardText
             title={title}
             path={path}
