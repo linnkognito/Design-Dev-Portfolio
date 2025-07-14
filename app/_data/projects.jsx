@@ -43,7 +43,10 @@ export const projects = [
     about: {
       title: 'About',
       text: <MorningstarAboutText />,
-      visuals: [<MorningstarAbout100 />, <MorningstarAboutDetails />],
+      visuals: [
+        <MorningstarAbout100 key='100' />,
+        <MorningstarAboutDetails key='details' />,
+      ],
     },
     uiUx: {
       title: 'UI/UX',

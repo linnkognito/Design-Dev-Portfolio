@@ -30,9 +30,9 @@ function ProjectCardLinks({ variant, links }) {
           ${iconStyles[variant]}
           ${link.colors}`}
         >
-          <button className='text-bgr text-lg group-hover:cursor-pointer'>
+          <span className='text-bgr text-lg group-hover:cursor-pointer'>
             {link.icon}
-          </button>
+          </span>
         </a>
       ))}
     </button>

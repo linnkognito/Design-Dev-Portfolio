@@ -13,7 +13,7 @@ function Home() {
 
       {projects.map((project) => (
         <ProjectSection key={project.id}>
-          <ProjectCard key={project.id} projectOptions={project} />
+          <ProjectCard projectOptions={project} />
         </ProjectSection>
       ))}
     </main>
