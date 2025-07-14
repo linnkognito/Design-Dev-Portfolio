@@ -5,8 +5,8 @@ function TechIcon({ tech }: { tech: Technology }) {
   const IconComponent = techIcons[tech.icon];
 
   return (
-    <div className='w-12 h-12 p-2 border-2 border-pri rounded-lg'>
-      <IconComponent className='' />
+    <div className='w-14 h-14 p-2 border-2 border-pri rounded-lg'>
+      <IconComponent />
     </div>
   );
 }

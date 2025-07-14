@@ -1,4 +1,7 @@
+'use client';
 import Image from 'next/image';
+import React from 'react';
+import { ReactFitty } from 'react-fitty';
 
 export function MorningstarAboutText() {
   return (
@@ -23,10 +26,13 @@ export function MorningstarAboutText() {
 }
 export function MorningstarAbout100() {
   return (
-    <div className='flex flex-col items-center justify-center w-full h-full py-2 px-4'>
-      <p className='text-heading text-pop text-[120px] xs:text-[140px] sm:text-[180px] md:text-[200px] hover-image-scale hover:-rotate-12 transition-all duration-500 ease-in-out'>
-        100
+    <div className='group flex flex-col items-center justify-center w-full h-full py-2 px-4 text-center hover-rotate-60'>
+      <p className='text-preset-p3 text-heading uppercase tracking-[10px] group-hover:-rotate-20 transition-[rotate] duration-500 ease-in-out'>
+        Lighthouse
       </p>
+      <ReactFitty className='text-heading text-pop text-9xl leading-none group-hover:-rotate-20 hover-image-scale transition-all duration-500 ease-in-out'>
+        <p>100/100</p>
+      </ReactFitty>
     </div>
   );
 }

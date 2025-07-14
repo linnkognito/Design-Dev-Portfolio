@@ -1,18 +1,19 @@
 import { UiUx } from '@/_types/project';
 import ColorPalette from './ColorPalette';
 import Heading from '../text/Heading';
+import SlideVisibleBottom from '@/_animations/SlideVisibleBottom';
 import LazyLoadContainer from '../motion/LazyLoadContainer';
 
 function ProjectPageUiUx({ uiUx }: { uiUx: UiUx }) {
   const { title, text, visuals, colorPalette } = uiUx;
 
   return (
-    <LazyLoadContainer tag='section' className='w-full'>
+    <section className='w-full'>
       {/* Color Palette */}
       <ColorPalette colors={colorPalette} />
 
       {/* Content Wrapper */}
-      <div
+      <LazyLoadContainer
         className='flex max-lg:flex-col 
           lg:gap-16 xl:gap-20 lg:items-center lg:justify-center lg:pl-16 lg:pr-6'
       >
@@ -29,10 +30,12 @@ function ProjectPageUiUx({ uiUx }: { uiUx: UiUx }) {
           >
             {title}
           </Heading>
-          <p className='text-preset-p2'>{text}</p>
+          <SlideVisibleBottom className='w-full'>
+            <p className='text-preset-p2'>{text}</p>
+          </SlideVisibleBottom>
         </div>
-      </div>
-    </LazyLoadContainer>
+      </LazyLoadContainer>
+    </section>
   );
 }
 

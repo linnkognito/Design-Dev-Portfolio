@@ -13,12 +13,16 @@ function SlideshowBar({
           role='tab'
           aria-selected={index === activeSlide}
           aria-label={`Slide ${index + 1} of ${quantity}`}
-          className='grow max-w-[148px] h-fit w-fit py-4 -my-4 cursor-pointer'
+          className='group grow max-w-[148px] h-fit w-fit py-4 -my-4 cursor-pointer'
         >
           <div
             className={`
-            h-1 rounded-full
-            ${index === activeSlide ? 'bg-pop' : 'bg-[#727272]'}
+            h-1 rounded-full 
+            ${
+              index === activeSlide
+                ? 'bg-pop'
+                : 'bg-[#727272] group-hover:bg-pri transition-colors duration-500 ease-in-out'
+            }
             `}
           />
         </div>

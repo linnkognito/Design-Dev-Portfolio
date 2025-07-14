@@ -17,7 +17,8 @@ function ProjectPage({ project }) {
       xl:px-24 xl:pt-16
     '
     >
-      <article className='flex flex-col items-center gap-50 w-full'>
+      <article className='flex flex-col items-center gap-80 w-full pb-10'>
+        {/* <article className='flex flex-col items-center gap-50 w-full'> */}
         <ProjectPageHero
           title={title}
           links={links}

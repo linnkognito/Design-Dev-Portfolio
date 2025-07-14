@@ -9,8 +9,8 @@ function ProjectPageTech({ technologies }: { technologies: Technology[] }) {
     hidden: {},
     show: {
       transition: {
-        delayChildren: 0.8,
-        staggerChildren: 0.2,
+        delayChildren: 0.6,
+        staggerChildren: 0.12,
       },
     },
   };
@@ -20,7 +20,7 @@ function ProjectPageTech({ technologies }: { technologies: Technology[] }) {
     show: {
       opacity: 1,
       scale: 1,
-      transition: { duration: 0.3, ease: 'easeOut' },
+      transition: { duration: 0.15, ease: 'easeOut' },
     },
   };
 

@@ -56,7 +56,6 @@ function ProjectPageHeroGallery({ images }: { images: Images }) {
       </AnimatePresence>
 
       {/* Other Images */}
-
       <motion.div
         key='gallery'
         variants={containerVariants}
@@ -69,7 +68,7 @@ function ProjectPageHeroGallery({ images }: { images: Images }) {
 
           return (
             <motion.div
-              key={`${image.src}-${index}-${featuredImage.src}`}
+              key={image.src}
               variants={thumbnailVariants}
               onClick={() => handleImageClick(index)}
               className='group relative aspect-4/3 rounded-2xl overflow-hidden cursor-zoom-in'
