@@ -7,19 +7,20 @@ export function MorningstarAboutText() {
   return (
     <>
       <p>
-        Morningstar is a fully responsive e-commerce web app built to sharpen my
-        skills in UI design and fullstack development.
+        Morningstar is a custom-built e-commerce web app designed to sharpen my
+        skills in both frontend & fullstack development.
       </p>
 
       <p>
-        The app showcases a fake online clothing store, and pulls product data
-        from a custom-built Express + MongoDB API.
+        My goal was to simulate a real-world development environment: designing
+        an expressive, responsive UI from scratch, building a REST API, &
+        integrating dynamic product data.
       </p>
 
       <p>
-        My goal was to simulate something akin to a real-world dev environment:
-        from building an API and handling dynamic product filtering, to crafting
-        a layout that is both expressive and responsive.
+        The app puts special focus on UI/UX, accessibility & performance,
+        earning a 100/100 Lighthouse score without compromising style or
+        interactivity.
       </p>
     </>
   );

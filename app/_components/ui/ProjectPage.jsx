@@ -2,9 +2,23 @@ import ProjectPageAbout from './ProjectPageAbout';
 import ProjectPageFeatures from './ProjectPageFeatures';
 import ProjectPageHero from './ProjectPageHero';
 import ProjectPageUiUx from './ProjectPageUiUx';
+import ProjectPageChallenges from './ProjectPageChallenges';
+import ProjectPageOutcome from './ProjectPageOutcome';
+import ProjectPageReflection from './ProjectPageReflection';
 
 function ProjectPage({ project }) {
-  const { title, links, images, technologies, about, uiUx, features } = project;
+  const {
+    title,
+    links,
+    images,
+    technologies,
+    about,
+    uiUx,
+    features,
+    challenges,
+    outcome,
+    reflection,
+  } = project;
 
   return (
     <main
@@ -17,8 +31,7 @@ function ProjectPage({ project }) {
       xl:px-24 xl:pt-16
     '
     >
-      <article className='flex flex-col items-center gap-80 w-full pb-10'>
-        {/* <article className='flex flex-col items-center gap-50 w-full'> */}
+      <article className='flex flex-col items-center gap-50 lg:gap-70 w-full pb-10'>
         <ProjectPageHero
           title={title}
           links={links}
@@ -26,8 +39,12 @@ function ProjectPage({ project }) {
           technologies={technologies}
         />
         <ProjectPageAbout about={about} />
-        <ProjectPageUiUx uiUx={uiUx} />
-        <ProjectPageFeatures features={features} />
+
+        {uiUx && <ProjectPageUiUx uiUx={uiUx} />}
+        {features && <ProjectPageFeatures features={features} />}
+        {challenges && <ProjectPageChallenges challenges={challenges} />}
+        {outcome && <ProjectPageOutcome outcome={outcome} />}
+        {reflection && <ProjectPageReflection reflection={reflection} />}
       </article>
     </main>
   );

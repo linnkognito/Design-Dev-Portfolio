@@ -1,6 +1,6 @@
 'use client';
 
-import { useMemo, useState } from 'react';
+import { useState } from 'react';
 import type { Images } from '@/_types/project';
 import { AnimatePresence, motion } from 'framer-motion';
 import Image from 'next/image';
@@ -31,7 +31,7 @@ function ProjectPageHeroGallery({ images }: { images: Images }) {
   }
 
   return (
-    <section className='max-md:hidden flex max-lg:flex-col gap-4 h-fit w-full'>
+    <section className='flex max-lg:flex-col gap-4 h-fit w-full'>
       {/* Featured Image */}
       <AnimatePresence mode='wait' initial={true}>
         <motion.div

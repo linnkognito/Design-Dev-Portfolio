@@ -49,7 +49,7 @@ function ProjectPageAbout({ about }: { about: About }) {
           initial='hidden'
           whileInView='show'
           viewport={{ once: true, amount: 0.5 }}
-          className='order-2 lg:order-1 relative lg:w-full lg:h-full rounded-2xl overflow-hidden border'
+          className='order-2 lg:order-1 relative lg:w-full lg:h-full rounded-2xl overflow-hidden'
         >
           {about.visuals[1]}
         </motion.div>

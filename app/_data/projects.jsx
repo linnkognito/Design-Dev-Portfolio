@@ -39,7 +39,7 @@ export const projects = [
       hideFromScreenReaders: false,
     },
     description:
-      'Responsive Next.js frontend for a fashion e-commerce app. Features include dynamic filtering, custom API integration and a vibrant UI built with Tailwind. Designed for real-world readiness and smooth performance across devices.',
+      'Full-stack web app built with Next.js, Tailwind, and MongoDB. Custom-designed UI with dynamic API integration, responsive layouts & a perfect Lighthouse score. I handled the entire frontend design & development.',
     about: {
       title: 'About',
       text: <MorningstarAboutText />,
@@ -61,7 +61,62 @@ export const projects = [
         { id: 'sea', color: 'bg-sea' },
       ],
     },
+    challenges: [
+      {
+        id: 'challange-1',
+        title: 'REST API',
+        icon: '/icons/icon-api.svg',
+        description: 'Building & connecting a custom REST API',
+      },
+      {
+        id: 'challange-2',
+        title: 'Global state',
+        icon: '/icons/icon-3shapes.svg',
+        description: 'Handling global state (cart, wishlist) with Redux',
+      },
+      {
+        id: 'challange-3',
+        title: 'Dynamic data',
+        icon: '/icons/icon-halfwave.svg',
+        description: 'Filtering, sorting & querying dynamic product data',
+      },
+      {
+        id: 'challange-4',
+        title: 'Lighthouse score',
+        icon: '/icons/icon-layout.svg',
+        description: 'Optimizing layout for 100/100 Lighthouse score',
+      },
+    ],
+    outcome: [
+      {
+        id: 'outcome-1',
+        title: 'Dynamic data',
+        icon: '/icons/icon-3shapes-blue.svg',
+        description: 'Filtering, sorting & querying dynamic product data',
+      },
+      {
+        id: 'outcome-2',
+        title: 'Accessibility',
+        icon: '/icons/icon-a11y.svg',
+        description: 'Improved my UI/UX design & accessibility skills',
+      },
+      {
+        id: 'outcome-3',
+        title: 'Lighthouse score',
+        icon: '/icons/icon-2halfcircles.svg',
+        description: '100/100 Lighthouse score',
+      },
+      {
+        id: 'outcome-4',
+        title: 'Custom API',
+        icon: '/icons/icon-apicall.svg',
+        description: 'Practiced building & connecting an API',
+      },
+    ],
+    reflection:
+      'This project helped me connect the dots between design and functionality - especially when building an app that feels fast, usable & custom-crafted.',
     technologies: [
+      { title: 'Next.js', icon: 'nextjs' },
       { title: 'React.js', icon: 'reactjs' },
       { title: 'Node.js', icon: 'nodejs' },
       { title: 'Tailwind CSS', icon: 'tailwind' },

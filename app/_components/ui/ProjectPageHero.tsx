@@ -41,7 +41,7 @@ function ProjectPageHero({
       </header>
 
       {/* Mobile --> Slideshow */}
-      <ProjectPageHeroSlideshow images={images} />
+      {/* <ProjectPageHeroSlideshow images={images} /> */}
       {/* Desktop --> Gallery */}
       <ProjectPageHeroGallery images={images} />
 

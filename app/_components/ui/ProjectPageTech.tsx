@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 import TechIcon from './TechIcon';
 
 function ProjectPageTech({ technologies }: { technologies: Technology[] }) {
-  const container = {
+  const containerVariants = {
     hidden: {},
     show: {
       transition: {
@@ -15,7 +15,7 @@ function ProjectPageTech({ technologies }: { technologies: Technology[] }) {
     },
   };
 
-  const icon = {
+  const iconVariants = {
     hidden: { opacity: 0, scale: 0.8 },
     show: {
       opacity: 1,
@@ -26,14 +26,24 @@ function ProjectPageTech({ technologies }: { technologies: Technology[] }) {
 
   return (
     <motion.div
-      variants={container}
+      variants={containerVariants}
       initial='hidden'
       whileInView='show'
       viewport={{ once: true }}
+      aria-labelledby='technologies-heading'
       className='flex max-xs:justify-between gap-7 xs:gap-8 w-fit pt-14 md:pt-16 lg:pl-4 max-lg:mx-auto'
     >
+      <h2 id='technologies-heading' className='sr-only'>
+        Technologies used
+      </h2>
+
       {technologies?.map((tech: Technology) => (
-        <motion.div variants={icon} key={tech.title}>
+        <motion.div
+          key={tech.title}
+          variants={iconVariants}
+          title={tech.title}
+          aria-label={tech.title}
+        >
           <TechIcon tech={tech} />
         </motion.div>
       ))}

@@ -54,6 +54,20 @@ export type Decoration = {
   hideFromScreenReaders?: boolean;
 };
 
+export type Challenge = {
+  id: string;
+  title: string;
+  icon: string;
+  description: string | ReactElement;
+};
+
+export type Outcome = {
+  id: string;
+  title: string;
+  icon: string;
+  description: string | ReactElement;
+};
+
 export type Project = {
   id: string;
   title: string;
@@ -63,9 +77,12 @@ export type Project = {
   description: string | ReactElement;
   about: About;
   uiUx: UiUx;
+  challenges: Challenge[];
+  outcome: Outcome[];
   technologies: Technology[];
   links: Link[];
   images: Image[];
   features: Feature[];
+  reflection: string;
   buttonLabel: string;
 };
