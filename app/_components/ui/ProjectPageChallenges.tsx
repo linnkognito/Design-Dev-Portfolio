@@ -16,16 +16,14 @@ function ProjectPageChallenges({ challenges }: { challenges: Challenge[] }) {
 
       <ul className='flex flex-col gap-4'>
         {challenges.map((challenge) => (
-          <li key={challenge.id} className='py-4'>
-            <div className='flex items-center gap-8'>
-              <Image
-                src={challenge.icon}
-                alt={`${challenge.title} icon`}
-                width={48}
-                height={48}
-              />
-              <p className='text-preset-p4'>{challenge.description}</p>
-            </div>
+          <li key={challenge.id} className='flex items-center gap-8 py-4'>
+            <Image
+              src={challenge.icon}
+              alt={`${challenge.title} icon`}
+              width={48}
+              height={48}
+            />
+            <p className='text-preset-p4'>{challenge.description}</p>
           </li>
         ))}
       </ul>
