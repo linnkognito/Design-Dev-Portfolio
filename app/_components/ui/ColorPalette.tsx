@@ -3,7 +3,15 @@
 import type { ColorPalette } from '@/_types/project';
 import { motion } from 'framer-motion';
 
-function ColorPalette({ colors }: { colors: ColorPalette }) {
+function ColorPalette({
+  colors,
+  size,
+  className,
+}: {
+  colors: ColorPalette;
+  size?: string;
+  className?: string;
+}) {
   const containerVariants = {
     hidden: {},
     show: {
@@ -34,7 +42,9 @@ function ColorPalette({ colors }: { colors: ColorPalette }) {
         <motion.div
           key={color.id}
           variants={colorVariants}
-          className={`grow max-sm:min-w-[110px] h-[50px] md:h-20 lg:h-16 w-auto rounded-[8px] ${color.color}`}
+          className={`grow ${
+            size || 'max-sm:min-w-[110px] h-[50px] md:h-20 lg:h-16'
+          } w-auto rounded-[8px] ${color.color}`}
         />
       ))}
     </motion.div>

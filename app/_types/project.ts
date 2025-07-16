@@ -30,7 +30,7 @@ export type Feature = {
   id: string;
   title: string;
   description: string | ReactElement;
-  image: ReactElement;
+  image: Image;
 };
 
 export type UiUx = {
@@ -68,6 +68,11 @@ export type Outcome = {
   description: string | ReactElement;
 };
 
+export type Reflection = {
+  image: string;
+  description: string[];
+};
+
 export type Project = {
   id: string;
   title: string;
@@ -83,6 +88,6 @@ export type Project = {
   links: Link[];
   images: Image[];
   features: Feature[];
-  reflection: string;
+  reflection: Reflection;
   buttonLabel: string;
 };

@@ -16,23 +16,23 @@ function ProjectPageOutcome({ outcome }: { outcome: Outcome[] }) {
         Outcome
       </Heading>
 
-      <ul className='flex flex-col gap-4 w-full'>
+      <ul className='flex flex-col gap-6 px-7 lg:px-[148px]'>
         {outcome.map((li, index) => {
           const bgColor = backgrounds[index % backgrounds.length];
 
           return (
             <li key={li.id} className='flex items-center gap-8'>
               <div
-                className={`flex items-center justify-center w-20 h-20 p-2 ${bgColor} rounded-2xl`}
+                className={`relative flex items-center justify-center w-16 h-16 md:w-20 md:h-20  p-6 ${bgColor} rounded-2xl aspect-square`}
               >
                 <Image
                   src={li.icon}
                   alt={`${li.title} icon`}
-                  width={80}
-                  height={80}
+                  fill
+                  className='object-center object-contain p-2'
                 />
               </div>
-              <p className='text-preset-p5'>{li.description}</p>
+              <p className='text-preset-p4'>{li.description}</p>
             </li>
           );
         })}

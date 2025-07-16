@@ -12,6 +12,7 @@
     "@heroicons/react": "^2.2.0",
     "@react-symbols/icons": "^1.2.10",
     "embla-carousel-react": "^8.6.0",
+    "embla-carousel-wheel-gestures": "^8.0.2",
     "framer-motion": "^12.15.0",
     "motion": "^12.9.2",
     "next": "15.3.0",

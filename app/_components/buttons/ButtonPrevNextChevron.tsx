@@ -2,15 +2,16 @@ import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/24/outline';
 
 function ButtonPrevNextChevron({ variant }: { variant: 'prev' | 'next' }) {
   const styles = {
-    prev: '',
-    next: 'pl-3 mb-[3px]',
+    prev: 'left-0',
+    next: 'right-0 pl-3 mb-[3px]',
   };
   return (
     <button
       type='button'
       aria-label={`${variant} button`}
       className={`
-        max-xl:hidden grid place-items-center 
+        hidden absolute
+        xl:grid place-items-center
         w-fit h-full
         cursor-pointer
         hover:text-pop hover:scale-120

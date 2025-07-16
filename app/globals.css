@@ -56,7 +56,7 @@
     @apply text-xl md:text-2xl font-medium tracking-[1%] leading-[32px];
   }
   .text-preset-p5 {
-    @apply text-xl xl:text-3xl font-medium tracking-[1%] leading-[32px];
+    @apply text-xl md:text-3xl font-medium tracking-[1%] leading-[32px];
   }
   .text-preset-p {
     @apply text-base md:text-lg lg:text-xl text-justify tracking-[7%] leading-[32px] hyphens-auto;

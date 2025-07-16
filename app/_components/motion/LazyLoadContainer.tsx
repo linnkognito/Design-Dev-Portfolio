@@ -9,7 +9,7 @@ type LazyLoadContainerProps = {
   className?: string;
 } & HTMLAttributes<HTMLElement>;
 
-export default function LazyLoadContainer({
+function LazyLoadContainer({
   children,
   tag = 'div',
   className,
@@ -22,7 +22,7 @@ export default function LazyLoadContainer({
       initial={{ opacity: 0, y: 30 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6, ease: 'easeOut' }}
-      viewport={{ once: true, amount: 0.4 }}
+      viewport={{ once: true, amount: 0.8 }}
       className={className}
       {...rest}
     >
@@ -30,3 +30,5 @@ export default function LazyLoadContainer({
     </MotionTag>
   );
 }
+
+export default LazyLoadContainer;

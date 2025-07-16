@@ -50,7 +50,8 @@ export const projects = [
     },
     uiUx: {
       title: 'UI/UX',
-      text: 'Built with utility-first Tailwind classes for quick styling and consistency. The layout is fully responsive and scales smoothly from mobile to widescreen. I also focused on creating seamless interaction design — making sure users can access key content and actions within one or two clicks, wherever they are, for an experience that feels natural and effortless.',
+      text: 'Navigation is designed to be quick & easy. Users can reach key content & actions within one or two clicks from anywhere on the site. The UI is playful with a style that feels both modern & a little nostalgic - something that works well across a wide age range.',
+
       visuals: <MorningstarVisuals />,
       colorPalette: [
         { id: 'zest', color: 'bg-zest' },
@@ -66,55 +67,65 @@ export const projects = [
         id: 'challange-1',
         title: 'REST API',
         icon: '/icons/icon-api.svg',
-        description: 'Building & connecting a custom REST API',
+        description: 'Keep product data dynamic and always up to date',
       },
       {
         id: 'challange-2',
         title: 'Global state',
         icon: '/icons/icon-3shapes.svg',
-        description: 'Handling global state (cart, wishlist) with Redux',
+        description: 'Manage global state for cart, wishlist, and filtering',
       },
       {
         id: 'challange-3',
         title: 'Dynamic data',
         icon: '/icons/icon-halfwave.svg',
-        description: 'Filtering, sorting & querying dynamic product data',
+        description: 'Make the app accessible for all users',
       },
       {
         id: 'challange-4',
         title: 'Lighthouse score',
         icon: '/icons/icon-layout.svg',
-        description: 'Optimizing layout for 100/100 Lighthouse score',
+        description: 'Hit a perfect 100/100 Lighthouse score',
       },
     ],
     outcome: [
       {
         id: 'outcome-1',
-        title: 'Dynamic data',
+        title: 'Custom API',
         icon: '/icons/icon-3shapes-blue.svg',
-        description: 'Filtering, sorting & querying dynamic product data',
+        description:
+          'Built and connected a custom REST API to serve live product data',
       },
       {
         id: 'outcome-2',
-        title: 'Accessibility',
+        title: 'Global state',
         icon: '/icons/icon-a11y.svg',
-        description: 'Improved my UI/UX design & accessibility skills',
+        description:
+          'Managed global state with Redux slices (cart, wishlist, filters)',
       },
       {
         id: 'outcome-3',
         title: 'Lighthouse score',
         icon: '/icons/icon-2halfcircles.svg',
-        description: '100/100 Lighthouse score',
+        description:
+          'Wrote semantic HTML, added ARIA labels & created reusable A11y-friendly components',
       },
       {
         id: 'outcome-4',
         title: 'Custom API',
         icon: '/icons/icon-apicall.svg',
-        description: 'Practiced building & connecting an API',
+        description:
+          'Focused on performance and best practices & landed a 100/100 Lighthouse score',
       },
     ],
-    reflection:
-      'This project helped me connect the dots between design and functionality - especially when building an app that feels fast, usable & custom-crafted.',
+    reflection: {
+      image: '/morningstar-2.png',
+      description: [
+        'This project was technically complete months ago, but I revisited it with fresh eyes to polish the layout & clean up the code. I made the structure more maintainable & optimized everything for performance & readability.',
+        'I enjoyed making the navigation smooth & intuitive, so users could access key features with as few clicks as possible.',
+        'Along the way, I deepened my understanding of fullstack development & gained confidence designing layout systems from scratch.',
+      ],
+    },
     technologies: [
       { title: 'Next.js', icon: 'nextjs' },
       { title: 'React.js', icon: 'reactjs' },
@@ -162,37 +173,50 @@ export const projects = [
     ],
     features: [
       {
-        id: 'dynamic-routing',
-        title: 'Dynamic Routing',
+        id: 'feature-1',
+        title: 'Design System',
         description:
-          'Built with React Router, the app uses nested routes and dynamic URL parameters to handle product categories and item detail pages. This prevents full page reloads, in order to create a seamless user experience.',
-        image: (
-          <TbRouteAltRight className='w-[200px] h-[200px] stroke-pop stroke-1' />
-        ),
-      },
-      {
-        id: 'state-management',
-        title: 'State Management',
-        description:
-          'I knew I wanted to keep product and cart logic centralized with global state. I used Redux Toolkit to manage global state for the products, cart, filters and UI controls. Async logic (like API fetching) is handled with thunks.',
+          'I created a consistent, component-based UI using Tailwind & custom design tokens. Every part of the layout - from buttons to cards to color palette - follows a shared system to keep the app visually cohesive & easy to expand.',
         image: {
-          src: '/morningstar-2.png',
-          alt: 'Products page details - menus and hover effects',
+          src: '/visuals/visual-designsystem.svg',
+          alt: 'Visual of the design system of project: Morningstar',
         },
       },
       {
-        id: 'custom-api',
-        title: 'Custom API',
+        id: 'feature-2',
+        title: 'Responsive layout',
         description:
-          'Powered by Express and MongoDB, I built a custom REST API to serve product data. The API supports filtering, querying by category or type, and is designed to mirror the structure of a real-world backend.',
+          'The layout adapts smoothly from mobile to widescreen using utility-first classes. I paid close attention to spacing, scaling & content structure to ensure the site feels intuitive no matter the device size.',
         image: {
-          src: '/morningstar-3.png',
-          alt: 'Home page for small screens and dropdown menu',
+          src: '/visuals/visual-responsive.svg',
+          alt: 'Visual of the responsive layout of project: Morningstar',
+        },
+      },
+      {
+        id: 'feature-3',
+        title: 'Interactivity',
+        description:
+          'From dropdown menus to product hover states, every interaction was designed to feel intentional. I focused on micro-interactions & visual feedback to guide the user without distracting them.',
+        image: {
+          src: '/visuals/visual-interactivity.svg',
+          alt: 'Visual of the interactivity of project: Morningstar',
+        },
+      },
+      {
+        id: 'feature-4',
+        title: 'Filtering & Sorting',
+        description:
+          'I built filter and sorting features that feel fast & intuitive. Filter menus, sort dropdowns & category pages are all powered by async Redux logic & tightly integrated with the API structure.',
+        image: {
+          src: '/visuals/visual-filtersort.svg',
+          alt: 'Visual of the filtering & sorting of project: Morningstar',
         },
       },
     ],
     buttonLabel: 'Details',
   },
+
+  // Mood Tracking
   {
     id: 'mood-tracking',
     title: 'Mood Tracking',
