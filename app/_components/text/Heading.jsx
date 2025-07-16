@@ -18,6 +18,7 @@ function Heading({
 
   const colorStyles = {
     pri: 'text-pri',
+    priLight: 'text-pri-light',
     pop: 'text-pop',
     txt: 'text-txt',
   };

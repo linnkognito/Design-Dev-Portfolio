@@ -8,9 +8,10 @@ function SlideshowBar({
   setActiveSlide: (index: number) => void;
 }) {
   return (
-    <div className='flex justify-center gap-4 lg:gap-7 w-full px-12 md:px-16'>
+    <div className='flex justify-center gap-4 lg:gap-7 w-full lg:mt-20 px-12 md:px-16'>
       {Array.from({ length: quantity }).map((_, index) => (
-        <div
+        <button
+          type='button'
           key={`slide-${index}`}
           role='tab'
           aria-selected={index === activeSlide}
@@ -24,11 +25,11 @@ function SlideshowBar({
             ${
               index === activeSlide
                 ? 'bg-pop'
-                : 'bg-[#727272] group-hover:bg-pri transition-colors duration-500 ease-in-out'
+                : 'bg-[#727272] group-hover:bg-pri transition-colors duration-200 ease-in-out'
             }
             `}
           />
-        </div>
+        </button>
       ))}
     </div>
   );
