@@ -1,6 +1,12 @@
 import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/24/outline';
 
-function ButtonPrevNextChevron({ variant }: { variant: 'prev' | 'next' }) {
+function ButtonPrevNextChevron({
+  variant,
+  onClick,
+}: {
+  variant: 'prev' | 'next';
+  onClick: () => void;
+}) {
   const styles = {
     prev: 'left-0 top-1/2 -translate-y-1/2 px-3',
     next: 'right-0 top-1/2 -translate-y-1/2 px-3 pb-2',
@@ -18,6 +24,7 @@ function ButtonPrevNextChevron({ variant }: { variant: 'prev' | 'next' }) {
         transition-all duration-300
         ${styles[variant]}
     `}
+      onClick={onClick}
     >
       {variant === 'prev' ? (
         <ChevronLeftIcon className='w-9 h-9' />
