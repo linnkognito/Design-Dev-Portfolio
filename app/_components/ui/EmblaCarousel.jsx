@@ -16,8 +16,7 @@ const EmblaCarousel = (props) => {
   const { slides, options } = props;
   const [emblaRef, emblaApi] = useEmblaCarousel(options);
 
-  const { selectedIndex, scrollSnaps, onDotButtonClick } =
-    useDotButton(emblaApi);
+  const { selectedIndex, onDotButtonClick } = useDotButton(emblaApi);
 
   const {
     prevBtnDisabled,
@@ -85,7 +84,7 @@ const EmblaCarousel = (props) => {
       </div>
 
       {/* Controls */}
-      <div>
+      <div className='flex items-center'>
         <div className='embla__buttons'>
           <ButtonPrevNextChevron
             variant='prev'

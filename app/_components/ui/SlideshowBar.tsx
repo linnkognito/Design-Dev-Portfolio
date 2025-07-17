@@ -8,7 +8,7 @@ function SlideshowBar({
   setActiveSlide: (index: number) => void;
 }) {
   return (
-    <div className='flex gap-4 lg:gap-7 w-full lg:mt-20 px-12 md:px-16'>
+    <div className='flex items-center justify-center gap-4 lg:gap-7 w-full lg:mt-20 px-12 md:px-16'>
       {Array.from({ length: quantity }).map((_, index) => (
         <button
           type='button'
