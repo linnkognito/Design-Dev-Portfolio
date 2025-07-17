@@ -1,3 +1,4 @@
+import Header from './_components/layout/Header';
 import './_styles/embla.css';
 import './globals.css';
 import { Orbitron, Jura } from 'next/font/google';

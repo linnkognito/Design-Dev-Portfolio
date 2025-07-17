@@ -5,17 +5,27 @@ function NavLink({
   children,
   href,
   pathname,
+  variant = 'default',
   onClick,
   className,
 }: NavLinkProps) {
   const isActive = pathname === href;
 
+  const styles = {
+    default: 'border-b border-transparent hover:border-pop',
+    project: 'hover:text-pop',
+  };
+
   return (
     <li
       role='menuitem'
-      className={`pb-2 tracking-wider uppercase cursor-pointer border-b border-transparent hover:border-pop  
+      className={`
+        pb-2 tracking-wider uppercase cursor-pointer
+        transition-colors duration-300
         ${isActive ? 'text-pop hover:text-txt tracking-widest' : 'text-txt'} 
-      ${className}`}
+        ${styles[variant]}
+        ${className}
+      `}
     >
       <Link
         href={href}

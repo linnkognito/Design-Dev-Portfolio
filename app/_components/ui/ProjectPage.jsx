@@ -1,3 +1,4 @@
+import { projects } from '@/_data/projects';
 import ProjectPageAbout from './ProjectPageAbout';
 import ProjectPageFeatures from './ProjectPageFeatures';
 import ProjectPageHero from './ProjectPageHero';
@@ -5,6 +6,8 @@ import ProjectPageUiUx from './ProjectPageUiUx';
 import ProjectPageChallenges from './ProjectPageChallenges';
 import ProjectPageOutcome from './ProjectPageOutcome';
 import ProjectPageReflection from './ProjectPageReflection';
+import HeaderProjectPage from '../layout/HeaderProjectPage';
+import { ChevronLeftIcon } from '@heroicons/react/24/outline';
 
 function ProjectPage({ project }) {
   const {
@@ -25,8 +28,8 @@ function ProjectPage({ project }) {
       className='
       flex flex-col items-center w-full max-w-[1440px] mx-auto
       px-4 pt-8 pb-24
-      sm:px-8 
-      md:px-9 md:pt-12 
+      sm:px-8
+      md:px-9 md:pt-12
       lg:px-20
       xl:px-24 xl:pt-16
     '
