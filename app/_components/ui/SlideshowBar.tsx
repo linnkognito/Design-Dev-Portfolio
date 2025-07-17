@@ -8,7 +8,7 @@ function SlideshowBar({
   setActiveSlide: (index: number) => void;
 }) {
   return (
-    <div className='flex justify-center gap-4 lg:gap-7 w-full lg:mt-20 px-12 md:px-16'>
+    <div className='flex gap-4 lg:gap-7 w-full lg:mt-20 px-12 md:px-16'>
       {Array.from({ length: quantity }).map((_, index) => (
         <button
           type='button'
@@ -16,7 +16,7 @@ function SlideshowBar({
           role='tab'
           aria-selected={index === activeSlide}
           aria-label={`Slide ${index + 1} of ${quantity}`}
-          className='group grow max-w-[148px] h-fit w-fit py-4 -my-4 cursor-pointer'
+          className='group w-full max-w-[148px] h-fit py-4 cursor-pointer'
           onClick={() => setActiveSlide(index)}
         >
           <div

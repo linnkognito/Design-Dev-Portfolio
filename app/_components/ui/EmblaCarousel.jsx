@@ -54,7 +54,7 @@ const EmblaCarousel = (props) => {
                 </div>
 
                 {/* Text */}
-                <div className='flex flex-col items-center justify-center gap-8 w-full lg:w-3/5 max-lg:mb-16 max-lg:px-10 lg:pt-4 lg:pr-8'>
+                <div className='flex flex-col items-center justify-center gap-8 w-full lg:w-3/5 max-lg:mb-16 md:px-10 lg:pt-4 lg:pr-8'>
                   <Heading
                     tag='h3'
                     color='priLight'
@@ -72,9 +72,7 @@ const EmblaCarousel = (props) => {
 
                   <div className='h-fit max-lg:px-5'>
                     {typeof feature.description === 'string' ? (
-                      <p className='text-preset-p3 max-lg:px-5'>
-                        {feature.description}
-                      </p>
+                      <p className='text-preset-p3'>{feature.description}</p>
                     ) : (
                       feature.description
                     )}
@@ -86,7 +84,8 @@ const EmblaCarousel = (props) => {
         </div>
       </div>
 
-      <div className='embla__controls'>
+      {/* Controls */}
+      <div>
         <div className='embla__buttons'>
           <ButtonPrevNextChevron
             variant='prev'
