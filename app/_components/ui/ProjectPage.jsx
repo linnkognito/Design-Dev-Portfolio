@@ -7,6 +7,7 @@ import ProjectPageOutcome from './ProjectPageOutcome';
 import ProjectPageReflection from './ProjectPageReflection';
 import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/24/outline';
 import Link from 'next/link';
+import ProjectPageFooter from './ProjectPageFooter';
 
 function ProjectPage({ project }) {
   const {
@@ -24,7 +25,7 @@ function ProjectPage({ project }) {
 
   return (
     <main
-      className='
+      className='relative
       flex flex-col items-center w-full max-w-[1440px] mx-auto
       px-4 pt-8 pb-24
       sm:px-8
@@ -33,7 +34,7 @@ function ProjectPage({ project }) {
       xl:px-24 xl:pt-16
     '
     >
-      <article className='flex flex-col items-center gap-50 lg:gap-70 w-full pb-10'>
+      <article className='flex flex-col items-center gap-50 lg:gap-70 w-full pb-24 md:pb-32'>
         <ProjectPageHero
           title={title}
           links={links}
@@ -48,15 +49,7 @@ function ProjectPage({ project }) {
         {outcome && <ProjectPageOutcome outcome={outcome} />}
         {reflection && <ProjectPageReflection reflection={reflection} />}
       </article>
-
-      <footer className='flex items-center justify-center gap-4 w-full'>
-        <Link href='/projects'>
-          <ChevronLeftIcon className='w-6 h-6' />
-        </Link>
-        <Link href='/projects'>
-          <ChevronRightIcon className='w-6 h-6' />
-        </Link>
-      </footer>
+      <ProjectPageFooter />
     </main>
   );
 }

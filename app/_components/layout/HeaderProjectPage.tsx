@@ -1,6 +1,5 @@
 import { projects } from '@/_data/projects';
 import NavLink from './NavLink';
-import { ArrowLeftIcon, ArrowRightIcon } from '@heroicons/react/24/outline';
 
 function HeaderProjectPage({ currentIndex }: { currentIndex: number }) {
   const nextProject = projects[currentIndex + 1];
