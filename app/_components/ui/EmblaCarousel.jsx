@@ -31,7 +31,7 @@ const EmblaCarousel = (props) => {
         <div className='embla__container'>
           {slides.map((feature, index) => (
             <div
-              className='embla__slide cursor-pointer'
+              className='embla__slide cursor-grab active:cursor-grabbing'
               key={index}
               onClick={() => emblaApi.scrollTo(index)}
             >

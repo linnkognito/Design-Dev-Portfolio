@@ -31,7 +31,7 @@ function ProjectPageAbout({ about }: { about: About }) {
         className='
           grid grid-cols-[5fr_2fr] grid-rows-1 gap-4 w-full
           lg:grid-cols-1 lg:grid-rows-[2fr_5fr]
-          lg:min-h-[400px]
+          lg:min-h-[400px] max-h-[492px]
           '
       >
         <motion.div

@@ -9,10 +9,7 @@ function ProjectCardLinks({ variant, links }) {
   };
 
   return (
-    <button
-      type='button'
-      title='Open link'
-      aria-label='Open link'
+    <div
       className={`
         flex 
         ${wrapperStyles[variant]}`}
@@ -26,16 +23,19 @@ function ProjectCardLinks({ variant, links }) {
           target='_blank'
           rel='noopener noreferrer'
           className={`group flex items-center justify-center rounded-lg transition-colors 
-          duration-300
-          ${iconStyles[variant]}
-          ${link.colors}`}
+            duration-300
+            ${iconStyles[variant]}
+            ${link.colors}`}
         >
-          <span className='text-bgr text-lg group-hover:cursor-pointer'>
+          <button
+            aria-label='Open link'
+            className='text-bgr text-lg group-hover:cursor-pointer'
+          >
             {link.icon}
-          </span>
+          </button>
         </a>
       ))}
-    </button>
+    </div>
   );
 }
 

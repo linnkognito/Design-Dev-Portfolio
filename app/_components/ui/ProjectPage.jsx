@@ -1,3 +1,4 @@
+import { projects } from '@/_data/projects';
 import ProjectPageAbout from './ProjectPageAbout';
 import ProjectPageFeatures from './ProjectPageFeatures';
 import ProjectPageHero from './ProjectPageHero';
@@ -5,23 +6,10 @@ import ProjectPageUiUx from './ProjectPageUiUx';
 import ProjectPageChallenges from './ProjectPageChallenges';
 import ProjectPageOutcome from './ProjectPageOutcome';
 import ProjectPageReflection from './ProjectPageReflection';
-import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/24/outline';
-import Link from 'next/link';
 import ProjectPageFooter from './ProjectPageFooter';
 
 function ProjectPage({ project }) {
-  const {
-    title,
-    links,
-    images,
-    technologies,
-    about,
-    uiUx,
-    features,
-    challenges,
-    outcome,
-    reflection,
-  } = project;
+  const { about, uiUx, features, challenges, outcome, reflection } = project;
 
   return (
     <main
@@ -35,12 +23,7 @@ function ProjectPage({ project }) {
     '
     >
       <article className='flex flex-col items-center gap-50 lg:gap-70 w-full pb-24 md:pb-32'>
-        <ProjectPageHero
-          title={title}
-          links={links}
-          images={images}
-          technologies={technologies}
-        />
+        <ProjectPageHero project={project} />
         <ProjectPageAbout about={about} />
 
         {uiUx && <ProjectPageUiUx uiUx={uiUx} />}
@@ -49,7 +32,11 @@ function ProjectPage({ project }) {
         {outcome && <ProjectPageOutcome outcome={outcome} />}
         {reflection && <ProjectPageReflection reflection={reflection} />}
       </article>
-      <ProjectPageFooter />
+
+      <ProjectPageFooter
+        currentIndex={projects.indexOf(project)}
+        lastIndex={projects.length - 1}
+      />
     </main>
   );
 }

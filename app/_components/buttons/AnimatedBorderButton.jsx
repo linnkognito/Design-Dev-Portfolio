@@ -10,6 +10,11 @@ function AnimatedBorderButton() {
     return `conic-gradient(from ${r}deg, var(--color-pop), var(--color-pri),var(--color-bgr))`;
   });
 
+  const scrollToProjects = () => {
+    const el = document.getElementById('project-section');
+    if (el) el.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <div
       role='button'
@@ -20,6 +25,10 @@ function AnimatedBorderButton() {
         color='none'
         ariaLabel='View my work'
         className='relative w-full py-2 text-lg font-semibold bg-bgr hover:bg-gray-900 z-[100]'
+        onClick={() => {
+          console.log('clicked');
+          scrollToProjects();
+        }}
       >
         Discover
       </ButtonCTA>

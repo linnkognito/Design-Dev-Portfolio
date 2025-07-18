@@ -1,7 +1,13 @@
-import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/24/outline';
+import { projects } from '@/_data/projects';
 import Link from 'next/link';
 
-function ProjectPageFooter({ currentIndex }: { currentIndex: number }) {
+function ProjectPageFooter({
+  currentIndex,
+  lastIndex,
+}: {
+  currentIndex: number;
+  lastIndex: number;
+}) {
   return (
     <footer
       className='
@@ -10,19 +16,22 @@ function ProjectPageFooter({ currentIndex }: { currentIndex: number }) {
     >
       <div className='flex items-center justify-between h-full'>
         {/* Mobile */}
-        <Link href='/projects' className=''>
-          {/* <ChevronLeftIcon className='w-6 h-full stroke-txt sm:hidden my-auto' /> */}
+        <Link href='/' className=''>
           <span className='p-4 uppercase border-b border-transparent max-sm:hover:text-pop md:hover:border-pop transition-colors duration-300 ease-in'>
             Back
           </span>
         </Link>
 
-        <Link href='/projects' className=''>
-          {/* <ChevronRightIcon className='w-6 h-full stroke-txt sm:hidden my-auto' /> */}
-          <span className='p-4 uppercase border-b border-transparent max-sm:hover:text-pop md:hover:border-pop transition-colors duration-300 ease-in'>
-            Next
-          </span>
-        </Link>
+        {currentIndex < lastIndex && (
+          <Link
+            href={projects[currentIndex + 1].path}
+            className='cursor-pointer'
+          >
+            <span className='p-4 uppercase border-b border-transparent max-sm:hover:text-pop md:hover:border-pop transition-colors duration-300 ease-in'>
+              Next
+            </span>
+          </Link>
+        )}
       </div>
     </footer>
   );
