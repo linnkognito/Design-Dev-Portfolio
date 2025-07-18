@@ -6,7 +6,6 @@ import { motion } from 'framer-motion';
 function ColorPalette({
   colors,
   size,
-  className,
 }: {
   colors: ColorPalette;
   size?: string;

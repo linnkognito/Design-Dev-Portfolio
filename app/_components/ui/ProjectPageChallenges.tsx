@@ -2,7 +2,6 @@ import { Challenge } from '@/_types/project';
 import LazyLoadContainer from '../motion/LazyLoadContainer';
 import Heading from '../text/Heading';
 import Image from 'next/image';
-import ColorPalette from './ColorPalette';
 
 function ProjectPageChallenges({ challenges }: { challenges: Challenge[] }) {
   const colorPalette = [

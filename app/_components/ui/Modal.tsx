@@ -1,7 +1,7 @@
 'use client';
 
 import { useRef } from 'react';
-import { AnimatePresence, motion, scale } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { XMarkIcon } from '@heroicons/react/24/outline';
 import useDismiss from '../../_hooks/useDismiss';
 import useDisableBackgroundScroll from '../../_hooks/useDisableBackgroundScroll';
@@ -15,7 +15,7 @@ type ModalProps = {
 };
 
 function Modal({ children, isOpen, onClose, srHeading }: ModalProps) {
-  const modalRef = useRef();
+  const modalRef = useRef<HTMLDivElement>(null);
   useDisableBackgroundScroll(isOpen);
   useDismiss(modalRef, isOpen, onClose);
 
