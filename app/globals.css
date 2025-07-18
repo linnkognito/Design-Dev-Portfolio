@@ -48,7 +48,7 @@
     @apply text-lg md:text-xl text-justify font-medium tracking-[1%] leading-[32px] hyphens-auto;
   }
   .text-preset-p2 {
-    @apply text-base md:text-lg text-justify font-medium tracking-[1%] leading-[32px] hyphens-auto;
+    @apply text-lg text-justify font-medium tracking-[1%] leading-[32px] hyphens-auto;
   }
   .text-preset-p3 {
     @apply text-base md:text-lg text-justify font-medium tracking-[-0.5%] leading-[28px] md:leading-[40px] hyphens-auto;
