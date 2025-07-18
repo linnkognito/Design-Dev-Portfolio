@@ -1,7 +1,6 @@
 import { Reflection } from '@/_types/project';
 import LazyLoadContainer from '../motion/LazyLoadContainer';
 import Heading from '../text/Heading';
-import Image from 'next/image';
 
 function ProjectPageReflection({ reflection }: { reflection: Reflection }) {
   const { image, description } = reflection;

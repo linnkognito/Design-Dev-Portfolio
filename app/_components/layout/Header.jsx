@@ -1,11 +1,10 @@
 import { BsLinkedin, BsGithub } from 'react-icons/bs';
-import NavWrapper from '@/_components/layout/NavWrapper';
 import Link from 'next/link';
 
 function Header({ ...props }) {
   return (
     <header
-      className='flex items-center justify-end w-full max-w-header mx-auto pl-4 pr-6 md:px-10 py-6 sm:pt-12 sm:pb-6'
+      className='flex items-center justify-end w-full max-w-header mx-auto pl-4 sm:pr-6 md:px-10 py-6 sm:pt-12 sm:pb-6'
       {...props}
     >
       <div className='flex gap-4'>

@@ -1,4 +1,4 @@
-import { Bold, FontColor } from '../text/TextStyles';
+import { Bold } from '../text/TextStyles';
 import TextLink from '../text/TextLink';
 import Image from 'next/image';
 

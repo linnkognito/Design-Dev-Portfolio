@@ -2,7 +2,7 @@
 import Image from 'next/image';
 import React from 'react';
 import { ReactFitty } from 'react-fitty';
-import { Bold, FontColor } from '../text/TextStyles';
+import { Bold } from '../text/TextStyles';
 
 export function MorningstarAboutText() {
   return (

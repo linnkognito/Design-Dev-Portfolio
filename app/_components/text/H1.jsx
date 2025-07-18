@@ -4,19 +4,19 @@ function H1() {
   return (
     <h1
       id='index-heading'
-      className='flex flex-col w-fit pt-1/3 font-semibold tracking-wide uppercase'
+      className='flex flex-col max-sm:gap-2 w-fit pt-1/3 font-semibold tracking-wide uppercase'
     >
-      <span className='text-5xl md:text-7xl lg:text-8xl leading-none'>
+      <span className='text-[40px] sm:text-5xl md:text-7xl lg:text-8xl leading-none'>
         I&apos;m Linn
       </span>
 
-      <div className='w-full text-6xl md:text-8xl lg:text-9xl text-pop leading-none inline-block'>
+      <div className='w-full text-5xl sm:text-6xl md:text-8xl lg:text-9xl text-pop leading-none inline-block'>
         Design
         <span className='text-txt'>/</span>
         <span className='text-pri'>Dev</span>
       </div>
 
-      <span className='pt-1 pr-4 text-5xl md:text-7xl lg:text-8xl leading-none'>
+      <span className='pt-1 pr-4 text-[40px] sm:text-5xl md:text-7xl lg:text-8xl leading-none'>
         Hybrid
       </span>
     </h1>
