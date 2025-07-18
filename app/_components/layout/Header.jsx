@@ -8,10 +8,22 @@ function Header({ ...props }) {
       {...props}
     >
       <div className='flex gap-4'>
-        <Link href='https://www.linkedin.com/in/linn-es-johansen/'>
+        <Link
+          href='https://www.linkedin.com/in/linn-es-johansen/'
+          target='_blank'
+          rel='noopener noreferrer'
+          aria-label='LinkedIn'
+          title='LinkedIn'
+        >
           <BsLinkedin className='w-6 h-6 text-pop text-xl hover:text-txt cursor-pointer' />
         </Link>
-        <Link href='https://github.com/linnkognito'>
+        <Link
+          href='https://github.com/linnkognito'
+          target='_blank'
+          rel='noopener noreferrer'
+          aria-label='GitHub'
+          title='GitHub'
+        >
           <BsGithub className='w-6 h-6 text-pri text-xl hover:text-txt cursor-pointer' />
         </Link>
       </div>
