@@ -69,7 +69,6 @@ export type Outcome = {
 };
 
 export type Reflection = {
-  image: string;
   description: string[];
 };
 
@@ -77,7 +76,7 @@ export type Project = {
   id: string;
   title: string;
   path: string;
-  image: Image;
+  projectCardImage: Image;
   decoration: Decoration;
   description: string | ReactElement;
   about: About;

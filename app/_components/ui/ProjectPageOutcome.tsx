@@ -1,10 +1,9 @@
 import { Outcome } from '@/_types/project';
 import Heading from '../text/Heading';
-import Image from 'next/image';
-import LazyLoadContainer from '../motion/LazyLoadContainer';
+import IconCube from './IconCube';
 
 function ProjectPageOutcome({ outcome }: { outcome: Outcome[] }) {
-  const backgrounds = ['bg-txt', 'bg-pop', 'bg-pri', 'bg-sec'];
+  const backgrounds = ['bg-txt', 'bg-pop', 'bg-pri', 'bg-sec'] as const;
 
   return (
     <section
@@ -21,17 +20,13 @@ function ProjectPageOutcome({ outcome }: { outcome: Outcome[] }) {
 
           return (
             <li key={li.id} className='flex max-sm:flex-col items-center gap-8'>
-              <LazyLoadContainer
-                tag='div'
-                className={`relative flex items-center justify-center w-16 h-16 md:w-20 md:h-20  p-6 ${bgColor} rounded-2xl aspect-square`}
-              >
-                <Image
-                  src={li.icon}
-                  alt={`${li.title} icon`}
-                  fill
-                  className='object-center object-contain p-2'
-                />
-              </LazyLoadContainer>
+              <IconCube
+                icon={li.icon}
+                alt={`${li.title} icon`}
+                bgColor={bgColor}
+                className='w-16 h-16 md:w-20 md:h-20'
+              />
+
               <p className='text-preset-p4 max-sm:text-center'>
                 {li.description}
               </p>

@@ -11,13 +11,13 @@ function Home() {
     >
       <HeroSection />
 
-      <div id='project-section' className='flex flex-col gap-10'>
+      <section id='project-section' className='flex flex-col gap-10'>
         {projects.map((project) => (
           <ProjectSection key={project.id}>
             <ProjectCard project={project} />
           </ProjectSection>
         ))}
-      </div>
+      </section>
     </main>
   );
 }

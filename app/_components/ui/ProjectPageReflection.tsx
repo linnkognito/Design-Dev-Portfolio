@@ -3,7 +3,7 @@ import LazyLoadContainer from '../motion/LazyLoadContainer';
 import Heading from '../text/Heading';
 
 function ProjectPageReflection({ reflection }: { reflection: Reflection }) {
-  const { image, description } = reflection;
+  const { description } = reflection;
 
   return (
     <LazyLoadContainer
@@ -11,16 +11,6 @@ function ProjectPageReflection({ reflection }: { reflection: Reflection }) {
       className='flex max-lg:flex-col 
           lg:gap-16 xl:gap-20 lg:items-center lg:justify-center lg:pl-16 lg:pr-6'
     >
-      {/* Visuals */}
-      {/* <div className='relative order-1 lg:order-2 w-full lg:w-1/4 aspect-square mb-14 md:mb-20 lg:mb-0 lg:pt-6 lg:pb-8 border-2 border-txt rounded-2xl overflow-hidden'>
-        <Image
-          src={image}
-          alt='Reflection image'
-          fill
-          className='object-center object-cover'
-        />
-      </div> */}
-
       {/* Text */}
       <div className='order-2 lg:order-1 w-full lg:w-3/4 px-7 md:px-24 lg:pt-12 lg:pb-16 lg:px-0'>
         <Heading

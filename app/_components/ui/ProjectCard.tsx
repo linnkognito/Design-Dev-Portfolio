@@ -14,7 +14,10 @@ function ProjectCard({ project }: { project: Project }) {
       tag='article'
       className='flex max-lg:flex-col lg:items-center lg:justify-center lg:gap-10 w-full lg:max-w-[1174px] h-fit lg:pl-10'
     >
-      <ProjectCardImages image={images[0]} decoration={decoration} />
+      <ProjectCardImages
+        image={project.projectCardImage || images[0]}
+        decoration={decoration}
+      />
 
       <section className='flex flex-col h-fit px-5 my-auto'>
         <ProjectCardLinks variant='card' links={links} />
