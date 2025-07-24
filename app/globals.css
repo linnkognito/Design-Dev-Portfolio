@@ -25,6 +25,14 @@
     --color-mt-green: #89e780;
     --color-mt-blue: #89caff;
     --color-mt-indigo: #b881ff;
+
+    --color-blossom-light: #fef5f0;
+    --color-blossom: #fed8e5;
+    --color-blossom-dark: #fd8eac;
+    --color-cherry: #f04555;
+    --color-cherry-dark: #e1233c;
+    --color-bigarreau: #641228;
+    --color-bigarreau-dark: #2e0116;
   }
   html {
     color: var(--color-txt);

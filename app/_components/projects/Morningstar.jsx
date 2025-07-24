@@ -30,7 +30,7 @@ export function MorningstarAboutText() {
 }
 export function MorningstarAbout100() {
   return (
-    <div className='group flex flex-col items-center justify-center w-full h-full py-2 px-4 text-center hover-rotate-60'>
+    <div className='group flex flex-col items-center justify-center w-full h-full py-2 px-4 text-center hover-rotate-60 rounded-2xl overflow-hidden border-2'>
       <p className='text-preset-p3 text-heading uppercase tracking-[10px]'>
         Lighthouse
       </p>

@@ -1,4 +1,3 @@
-import Header from './_components/layout/Header';
 import './_styles/embla.css';
 import './globals.css';
 import { Orbitron, Jura } from 'next/font/google';
@@ -22,7 +21,7 @@ export const metadata = {
     default: 'Linn Johansen | Front-End Developer',
   },
   description:
-    'Portfolio of Linn Johansen, a front-end developer specializing in React, Next.js, and accessible design. Clean code meets creative interfaces.',
+    'Portfolio of Linn Johansen - Front-end developer specializing in Tailwind CSS,React, Next.js, and accessible design. Clean code meets creative interfaces.',
   lang: 'en',
 };
 
@@ -33,7 +32,7 @@ function RootLayout({ children }) {
       dir='ltr'
       className={`${jura.variable} ${orbitron.variable}`}
     >
-      <body className='relative aspect-auto w-full max-w-screen min-h-screen scrollbar-gutter-stable overflow-x-hidden '>
+      <body className='relative aspect-auto w-full max-w-screen min-h-screen scrollbar-gutter-stable overflow-x-hidden'>
         {children}
       </body>
     </html>
