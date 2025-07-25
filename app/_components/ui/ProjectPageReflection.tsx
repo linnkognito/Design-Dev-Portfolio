@@ -11,7 +11,6 @@ function ProjectPageReflection({ reflection }: { reflection: Reflection }) {
       className='flex max-lg:flex-col 
           lg:gap-16 xl:gap-20 lg:items-center lg:justify-center lg:pl-16 lg:pr-6'
     >
-      {/* Text */}
       <div className='order-2 lg:order-1 w-full lg:w-3/4 px-7 md:px-24 lg:pt-12 lg:pb-16 lg:px-0'>
         <Heading
           tag='h2'

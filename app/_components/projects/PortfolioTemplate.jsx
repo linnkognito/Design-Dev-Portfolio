@@ -18,21 +18,20 @@ export function PortfolioTemplateAboutText() {
         This photography portfolio template is a custom-built, single-page web
         app designed to showcase visual work in a clean but vibrant layout.
         Inspired by a slightly retro aesthetic, the interface combines bold
-        colors, sharp typography, and smooth transitions to create a memorable
+        colors, sharp typography, & smooth transitions to create a memorable
         user experience.
       </p>
       <p>
-        Built with Next.js 15 and Tailwind CSS 4, the site is fully responsive
-        and optimized for performance. It includes a lightweight carousel
-        powered by Embla, and all content—including project data and social
-        links—is managed through Sanity CMS, making it easy to update without
-        touching the code.
+        Built with Next.js 15 & Tailwind CSS 4, the site is fully responsive &
+        optimized for performance. It includes a lightweight carousel powered by
+        Embla, & all content—including project data & social links—is managed
+        through Sanity CMS, making it easy to update without touching the code.
       </p>
       <p>
-        The project follows a modular structure and is set up like a monorepo,
-        keeping the frontend and CMS neatly separated. It's ideal for
+        The project follows a modular structure & is set up like a monorepo,
+        keeping the frontend & CMS neatly separated. It's ideal for
         photographers, designers, or digital artists looking for a fast, modern,
-        and editable way to present their work online.
+        & editable way to present their work online.
       </p>
     </>
   );

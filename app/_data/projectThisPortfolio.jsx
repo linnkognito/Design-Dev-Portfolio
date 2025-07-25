@@ -146,9 +146,9 @@ export const thisPortfolio = {
   ],
   reflection: {
     description: [
-      'Building something that represents me visually & technically has been incredibly fun & surprisingly challenging. I approach every detail with care & intention, & I hope it shows.',
-      'I learned (again) that less is more, & utilized my previous experience with project planning to great success.',
-      'This project helped me improve my UI/UX skills, professionally approach design decisions & deepen my understanding of visual storytelling.',
+      'Building something that represents me visually & technically has been incredibly fun & surprisingly challenging. I approached every detail with care & intention, & I hope it shows.',
+      'I learned (again) that less is more, & saved a lot of time by applying my project planning experience from previous roles.',
+      'This project helped me improve my UI/UX skills, & taught me how to professionally approach design decisions for greater visual storytelling.',
     ],
   },
   buttonLabel: 'Details',
