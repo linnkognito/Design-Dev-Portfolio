@@ -27,7 +27,7 @@ export const moodTracking = {
     },
   ],
   description:
-    'This is the frontend of the collaborative Mood Tracking project, a full-stack web app that lets users track their mood, feelings, and sleep habits. Features a fully responsive design, OAuth authentication and a bunch of API calls.',
+    'This is the frontend of the collaborative Mood Tracking project, a full-stack web app that lets users track their mood, feelings & sleep habits. Features a fully responsive design, OAuth authentication & a bunch of API calls.',
 
   images: [
     {
