@@ -18,10 +18,10 @@ const jura = Jura({
 export const metadata = {
   title: {
     template: 'Linn Johansen | %s',
-    default: 'Linn Johansen | Front-End Developer',
+    default: 'Linn Johansen | Designer & Developer',
   },
   description:
-    'Portfolio of Linn Johansen - Front-end developer specializing in Tailwind CSS,React, Next.js, and accessible design. Clean code meets creative interfaces.',
+    'Portfolio of Linn Johansen, a web designer & developer specializing in Tailwind CSS, React, Next.js & accessible design. I make performant look pretty.',
   lang: 'en',
 };
 
