@@ -34,7 +34,7 @@ export const morningstar = {
     },
   ],
   description:
-    'Full-stack web app built with Next.js, Tailwind & MongoDB. Featuring a custom-designed a fully responsive UI with dynamic API integration & a perfect Lighthouse score to go with it. I handled the entire frontend design & development portion.',
+    'Full-stack web app built with Next.js, Tailwind & MongoDB. Featuring a custom-designed & fully responsive UI with dynamic API integration & a perfect Lighthouse score to go with it. I handled the entire frontend design & development portion.',
 
   images: [
     {

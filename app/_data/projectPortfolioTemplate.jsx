@@ -19,20 +19,20 @@ export const portfolioTemplate = {
     {
       href: 'https://photo-portfolio-template.netlify.app/',
       title: 'Live Site',
-      alt: 'Link to the live site for the Photography Portfolio Template',
+      alt: 'Live site forPhotography Portfolio Template',
       icon: <FaGlobe />,
       colors: 'bg-pop stroke-bgr hover:bg-txt',
     },
     {
       href: 'https://github.com/linnkognito/Photography-Portfolio-Template',
       title: 'Github Repo',
-      alt: 'Link to the Github repository for thePhotography Portfolio Template',
+      alt: 'Github repository for thePhotography Portfolio Template',
       icon: <FaGithub />,
       colors: 'bg-pri stroke-bgr hover:bg-txt',
     },
   ],
   description:
-    'Single-page portfolio featuring a colorful customized UI & headless CMS for easy content updates. Built with React, Tailwind, and Sanity.',
+    'Single-page portfolio featuring a colorful customized UI & headless CMS for easy content updates. Built with Next.js, Tailwind, and Sanity.',
 
   images: [
     {
@@ -73,7 +73,7 @@ export const portfolioTemplate = {
   buttonLabel: 'Details',
   uiUx: {
     title: 'UI/UX',
-    text: 'The aim for the UI was to create a colorful, modern, and feminine design with a subtle retro touch. The layout is intentionally minimal—using just a few bold colors and a straightforward one-page structure to keep the focus on the work.',
+    text: 'The aim for the UI was to create a colorful, modern, and feminine design with a subtle retro touch. The layout is intentionally minimal - using a one-page structure & just a few bold colors & to keep the focus on the work.',
 
     visuals: <PortfolioTemplateUiUxVisuals />,
     colorPalette: [

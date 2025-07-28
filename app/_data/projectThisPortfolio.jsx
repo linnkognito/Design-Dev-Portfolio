@@ -76,7 +76,7 @@ export const thisPortfolio = {
   },
   uiUx: {
     title: 'UI/UX',
-    text: 'I scaled down the UI to make it as simple & focused as possible. This minimalist approach carries over to the UX as well, where I wanted things to be as straightforward & streamlined as possible. I followed familiar patterns & conventions to help users understand where things are & why they’re there. Interactions are encouraged through hover effects, animations & layout choices.',
+    text: 'I scaled down the UI to make it as simple & focused as possible. This minimalist approach carries over to the UX as well, where I wanted things to be straightforward & streamlined. I followed familiar patterns & conventions to help users understand where things are & why they’re there. Interactions are encouraged through hover effects, animations & layout choices.',
 
     visuals: <ThisPortfolioUiUxVisuals />,
     colorPalette: [
